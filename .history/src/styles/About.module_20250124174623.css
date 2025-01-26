@@ -1,0 +1,84 @@
+/* Page Wrapper */
+.page {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Main Container */
+.container {
+  flex: 1; /* Allows main content to expand */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically align content for mobile */
+  align-items: center; /* Horizontally center content for mobile */
+  padding: 20px; /* Add default padding on mobile */
+}
+
+/* Portrait Styling */
+.portrait {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  border: 8px solid #AAC27F; /* Frame effect */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 20px; /* Spacing below portrait */
+}
+
+/* Bio Section */
+.bioContainer {
+  text-align: left; /* Default left-aligned text for mobile */
+  max-width: 100%; /* Full width on mobile */
+}
+
+.bioContainer h1 {
+  font-size: 24px; /* Mobile-friendly heading size */
+  margin-bottom: 10px;
+  color: #333; /* Neutral dark color */
+}
+
+.bio {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555; /* Neutral text color */
+  margin: 0;
+  padding: 10px 0; /* Add vertical padding for breathing room */
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Align content side-by-side */
+    align-items: flex-start; /* Align items at the top */
+    justify-content: center; /* Center the overall layout horizontally */
+    padding: 40px; /* Increased padding for larger screens */
+    gap: 20px; /* Add space between the image and bio section */
+  }
+
+  .bioContainer {
+    max-width: 600px; /* Limit width for better readability */
+    margin-left: 20px; /* Add space between image and bio */
+  }
+
+  .portrait {
+    margin-bottom: 0; /* Remove bottom margin when side-by-side */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    gap: 30px; /* Add more space for larger screens */
+    padding: 60px; /* More generous padding for desktops */
+  }
+
+  .bioContainer h1 {
+    font-size: 28px; /* Larger heading for desktops */
+  }
+
+  .bio {
+    font-size: 18px; /* Increase font size for readability */
+  }
+
+  .portrait {
+    border-width: 10px; /* Thicker border for larger screens */
+  }
+}

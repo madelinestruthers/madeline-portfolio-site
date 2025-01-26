@@ -1,0 +1,78 @@
+/* Page Wrapper */
+  .page {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+    /* Main Container */
+  .container {
+    flex: 1; /* Allows the main content to expand and take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically, optional */
+    align-items: center; /* Center content horizontally, optional */
+    padding: 20px 90px;
+  }
+
+  /* Portrait Styling */
+  .portrait {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    border: 8px solid #AAC27F; /* Frame effect */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 2.5rem; /* Add spacing on smaller screens */
+  }
+  
+  /* Bio Section */
+  .bioContainer {
+    text-align: left; /* Center text for mobile-first */
+  }
+  
+  .bioContainer h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .bio {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+  }
+  
+  
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row; /* Align image and text horizontally */
+      align-items: flex-start;
+      text-align: left; /* Align text to the left for larger screens */
+      padding: 20px 100px;
+    }
+  
+    .portrait {
+      margin-bottom: 0; /* Remove bottom margin in horizontal layout */
+    }
+  
+    .bioContainer {
+      flex: 1; /* Allow text to take up remaining space */
+      margin-left: 20px; /* Space between the image and text */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .portrait {
+      border: 8px solid #AAC27F; /* Thicker border for larger screens */
+    }
+  
+    .bioContainer h1 {
+      font-size: 28px; /* Larger heading */
+    }
+  
+    .bio {
+      font-size: 18px; /* Larger text for readability */
+    }
+  }
+  
