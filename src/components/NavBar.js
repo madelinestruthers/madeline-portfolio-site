@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import styles from "./NavBar.module.css";
+import styles from "./Navbar.module.css";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +12,10 @@ const NavBar = () => {
       <div className={styles["navbar-logo"]}>
         <a href="/">
           <Image
-            src="/images/eye-logo.png"
+            src="/images/ms-logo.png"
             alt="Logo"
-            width={110} // Adjust width as needed
-            height={40} // Adjust height as needed to maintain aspect ratio
+            width={70} // Adjust width as needed
+            height={20} // Adjust height as needed to maintain aspect ratio
             priority
           />
         </a>

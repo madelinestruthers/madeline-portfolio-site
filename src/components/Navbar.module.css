@@ -11,7 +11,7 @@
   .navbar-logo {
     display: flex;
     align-items: center;
-    margin-left: 100px;
+
   }
   
   .navbar-logo a {
@@ -36,7 +36,6 @@
   .bar {
     height: 5px;
     width: 100%;
-    background-color: #114C71;
     border-radius: 3px;
     transition: all 0.3s ease;
   }
@@ -62,7 +61,7 @@
     text-decoration: none;
     font-size: 24px;
     font-weight: 600;
-    color: black;
+    color: #FFA885;
     padding: 1.5rem;
     display: block;
     transition: color 0.3s ease;
