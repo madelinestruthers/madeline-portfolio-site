@@ -38,15 +38,15 @@ export default function ViperEnergy() {
             <Image 
               src="/images/viper-orange.png" 
               alt="Blueberry Venom flavor Viper Energy drink design" 
-              width={820} 
-              height={550} 
+              width={920} 
+              height={650} 
               className={styles.flatImage}
             />
             <Image 
               src="/images/viper-blue-front.png" 
               alt="Blueberry Venom flavor Viper Energy drink can" 
-              width={900} 
-              height={700} 
+              width={1000} 
+              height={800} 
               className={styles.canImage}
             />
           </div>
@@ -55,15 +55,15 @@ export default function ViperEnergy() {
             <Image 
               src="/images/viper-berry.png" 
               alt="Fangberry Fusion flavor Viper Energy drink design" 
-              width={820} 
-              height={550} 
+              width={920} 
+              height={650} 
               className={styles.flatImage}
             />
             <Image 
               src="/images/viper-berry-front.png" 
               alt="Fangberry Fusion flavor Viper Energy drink can" 
-              width={900} 
-              height={700} 
+              width={1000} 
+              height={800} 
               className={styles.canImage}
             />
           </div>
@@ -72,15 +72,15 @@ export default function ViperEnergy() {
             <Image 
               src="/images/viper-honeydew.png" 
               alt="Hissin' Honeydew flavor Viper Energy drink design" 
-              width={820} 
-              height={550} 
+              width={920} 
+              height={650} 
               className={styles.flatImage}
             />
             <Image 
               src="/images/viper-honeydew-front.png" 
               alt="Missin' Honeydew flavor Viper Energy drink can" 
-              width={900} 
-              height={700} 
+              width={1000} 
+              height={800} 
               className={styles.canImage}
             />
           </div>
