@@ -30,7 +30,6 @@
 /* 📌 TEXT CONTAINER (h1 + p) */
 .textContainer {
     max-width: 600px;
-    
 }
 
 /* 📌 HEADING */
@@ -46,7 +45,7 @@
 .bio {
     font-size: 16px;
     line-height: 1.6;
-    color: #f1cfc1;
+    color: #f9bca4;
 }
 
 /* 📌 MAIN IMAGE */
@@ -77,13 +76,12 @@
 
 /* 📌 INDIVIDUAL IMAGE STYLING */
 .flatImage {
-    margin-right: 1rem;
+    border-radius: 10px;
 }
 
 .canImage {
     border-radius: 10px;
     padding: 0;
-    margin-left: 1rem;
 }
 
 /* 📌 DESKTOP VIEW (Text Beside Image) */
