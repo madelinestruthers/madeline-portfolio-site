@@ -29,7 +29,7 @@
 
 /* 📌 TEXT CONTAINER (h1 + p) */
 .textContainer {
-    max-width: 700px;
+    max-width: 600px;
 }
 
 /* 📌 HEADING */
@@ -46,6 +46,7 @@
     font-size: 16px;
     line-height: 1.6;
     color: #f9bca4;
+    width: 100%;
 }
 
 /* 📌 MAIN IMAGE */
