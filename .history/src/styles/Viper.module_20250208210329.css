@@ -89,11 +89,10 @@
     .topSection {
         flex-direction: row;
         /* Arrange text and image side by side */
-        justify-content:space-apart;
+        justify-content:center;
         align-items: center;
         text-align: left;
         width: 100%;
-        overflow: hidden;
        
     }
 
@@ -102,7 +101,8 @@
     }
 
     .mainImage {
-       
+        flex: 1;
+        /* Allow image to take up space */
         max-width: 1000px;
         padding:20px;
         margin-right: 2rem;
