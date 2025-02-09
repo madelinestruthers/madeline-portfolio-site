@@ -24,8 +24,8 @@ export default function ViperEnergy() {
               <Image
                 src="/images/cans.png"
                 alt="Viper Energy Can Display"
-                width={640}
-                height={490}
+                width={630}
+                height={480}
                 priority
               />
             </div>
