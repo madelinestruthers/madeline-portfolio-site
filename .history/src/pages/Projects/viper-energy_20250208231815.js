@@ -12,7 +12,7 @@ export default function ViperEnergy() {
           {/* Top Section */}
           <div className={styles.topSection}>
             <div className={styles.textContainer}>
-              <h1 className={styles.h1Style}>Viper Energy <br/>Can Design</h1>
+              <h1 className={styles.h1Style}>Viper Energy Can Design</h1>
               <p className={styles.bio}>
                 Viper Energy is a high intensity energy drink available in three bold flavors. 
                 Its striking design features vibrant colors that reflect the drink’s powerful taste 

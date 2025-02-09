@@ -22,9 +22,7 @@ export default function Menu() {
          <h1 className={styles.h1Style}>Restaurant Menu <br/>
           Design</h1>
             <p className={styles.bio}>
-            A brunch restaurant menu designed to optimize typography, ensuring clear hierarchy and readability while maintaining visual appeal. Thoughtful use of spacing, font selection, and layout created a functional yet stylish presentation. Additionally, a custom logo was developed to establish Blue Bison’s distinctive brand identity and cohesive aesthetic.
-            </p>
-                      </div>
+            A brunch restaurant menu designed to optimize typography, ensuring clear hierarchy and readability while maintaining visual appeal. Thoughtful use of spacing, font selection, and layout created a functional yet stylish presentation. Additionally, a custom logo was developed to establish Blue Bison’s distinctive brand identity and cohesive aesthetic.          </div>
         
         </main>
       </div>

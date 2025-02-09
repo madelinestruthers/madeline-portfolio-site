@@ -12,7 +12,7 @@ export default function ViperEnergy() {
           {/* Top Section */}
           <div className={styles.topSection}>
             <div className={styles.textContainer}>
-              <h1 className={styles.h1Style}>Viper Energy <br/>Can Design</h1>
+              <h1 className={styles.h1Style}>Viper Energy Can Design</h1>
               <p className={styles.bio}>
                 Viper Energy is a high intensity energy drink available in three bold flavors. 
                 Its striking design features vibrant colors that reflect the drink’s powerful taste 
@@ -38,15 +38,15 @@ export default function ViperEnergy() {
             <Image 
               src="/images/viper-orange.png" 
               alt="Blueberry Venom flavor Viper Energy drink design" 
-              width={650} 
+              width={550} 
               height={450} 
               className={styles.flatImage}
             />
             <Image 
               src="/images/viper-blue-front.png" 
               alt="Blueberry Venom flavor Viper Energy drink can" 
-              width={700} 
-              height={500} 
+              width={900} 
+              height={700} 
               className={styles.canImage}
             />
           </div>
@@ -55,15 +55,15 @@ export default function ViperEnergy() {
             <Image 
               src="/images/viper-berry.png" 
               alt="Fangberry Fusion flavor Viper Energy drink design" 
-              width={650} 
-              height={450} 
+              width={820} 
+              height={550} 
               className={styles.flatImage}
             />
             <Image 
               src="/images/viper-berry-front.png" 
               alt="Fangberry Fusion flavor Viper Energy drink can" 
-              width={700} 
-              height={500} 
+              width={900} 
+              height={700} 
               className={styles.canImage}
             />
           </div>
@@ -72,15 +72,15 @@ export default function ViperEnergy() {
             <Image 
               src="/images/viper-honeydew.png" 
               alt="Hissin' Honeydew flavor Viper Energy drink design" 
-              width={650} 
-              height={450} 
+              width={820} 
+              height={550} 
               className={styles.flatImage}
             />
             <Image 
               src="/images/viper-honeydew-front.png" 
               alt="Missin' Honeydew flavor Viper Energy drink can" 
-              width={700} 
-              height={500} 
+              width={900} 
+              height={700} 
               className={styles.canImage}
             />
           </div>
