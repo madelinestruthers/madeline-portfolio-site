@@ -1,0 +1,64 @@
+/* 📌 Mobile-first: Default single-column layout */
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically on mobile */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* 🎨 Project Card */
+  .project-card {
+    background: #8ea6b7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 90%; /* Full width on mobile */
+    max-width: 400px; /* Prevents it from being too wide */
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ✨ Project Title */
+  .project-card h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* 📺 Tablet (min-width: 768px) */
+  @media (min-width: 768px) {
+    .projects-container {
+      flex-direction: row; /* Switch to row layout */
+      flex-wrap: wrap; /* Wrap items */
+      justify-content: center;
+      padding: 40px;
+    }
+  
+    .project-card {
+      width: 45%; /* 2 cards per row */
+      max-width: 350px;
+    }
+  }
+  
+  /* 🖥️ Laptop/Desktop (min-width: 1024px) */
+  @media (min-width: 1024px) {
+    .projects-container {
+      gap: 30px;
+      padding: 50px;
+    }
+  
+    .project-card {
+      width: 30%; /* 3 cards per row */
+      max-width: 320px;
+    }
+  
+    .project-card h2 {
+      font-size: 20px;
+    }
+  }
+  

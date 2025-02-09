@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center; /* Center content vertically, optional */
   align-items: center; /* Center content horizontally, optional */
+  
 }
 
 .main ol {
