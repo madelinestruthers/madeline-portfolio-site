@@ -24,7 +24,7 @@ export default function ViperEnergy() {
               <Image
                 src="/images/cans.png"
                 alt="Viper Energy Can Display"
-                width={540}
+                width={600}
                 height={400}
                 priority
               />
@@ -45,7 +45,7 @@ export default function ViperEnergy() {
             <Image 
               src="/images/viper-blue-front.png" 
               alt="Blueberry Venom flavor Viper Energy drink can" 
-              width={670} 
+              width={700} 
               height={500} 
               className={styles.canImage}
             />
@@ -62,7 +62,7 @@ export default function ViperEnergy() {
             <Image 
               src="/images/viper-berry-front.png" 
               alt="Fangberry Fusion flavor Viper Energy drink can" 
-              width={670} 
+              width={700} 
               height={500} 
               className={styles.canImage}
             />
@@ -79,7 +79,7 @@ export default function ViperEnergy() {
             <Image 
               src="/images/viper-honeydew-front.png" 
               alt="Missin' Honeydew flavor Viper Energy drink can" 
-              width={670} 
+              width={700} 
               height={500} 
               className={styles.canImage}
             />
