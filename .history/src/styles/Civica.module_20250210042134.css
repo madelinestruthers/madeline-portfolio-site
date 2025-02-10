@@ -268,7 +268,7 @@ cursor: pointer;
         gap:2rem;
         margin-top: 4rem;
         margin-bottom: 6rem;
-        justify-content: center;
+        justify-content: space-around;
     }
     .finalLogoContainer{
         margin-top: 0;
