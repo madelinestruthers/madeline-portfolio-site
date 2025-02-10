@@ -117,10 +117,10 @@ In response, new logo concepts were developed to better align with the brand’s
 
          <h3>Logo Ideation Begins Again</h3>
         <div className={styles.logoImages}>
-        <Image src="/images/logo-draft-1.png" alt=" Logo Draft" width={250} height={250} />
-        <Image src="/images/logo-draft-2.png" alt=" Logo Draft" width={250} height={250} />
-        <Image src="/images/logo-draft-3.png" alt=" Logo Draft" width={250} height={250} />
-        <Image src="/images/logo-draft-4.png" alt=" Logo Draft" width={250} height={250} />
+        <Image src="/images/logo-draft-1.png" alt=" Logo Draft" width={200} height={200} />
+        <Image src="/images/logo-draft-2.png" alt=" Logo Draft" width={200} height={200} />
+        <Image src="/images/logo-draft-3.png" alt=" Logo Draft" width={200} height={200} />
+        <Image src="/images/logo-draft-4.png" alt=" Logo Draft" width={200} height={200} />
         </div>
         <h3>Final Logo</h3>
         <div className={styles.researchContent}>
