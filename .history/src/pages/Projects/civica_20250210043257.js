@@ -137,7 +137,7 @@ In response, new logo concepts were developed to better align with the brand’s
           </section>
           <section>
           <h3>Figma Interactive Prototype</h3>
-          <br/><br/>
+          <br/>
             <iframe width="800" height="450" src="https://embed.figma.com/proto/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=30-1676&starting-point-node-id=30%3A1600&embed-host=share" allowFullScreen></iframe>
           </section>
         </main>
