@@ -60,7 +60,7 @@
   
     .bioContainer {
       flex: 1; /* Allow text to take up remaining space */
-      width:50%;
+      width:40%;
 
     }
   }
@@ -79,7 +79,7 @@
   
     .bio {
       font-size: 18px; /* Larger text for readability */
-      width:76%;
+      width:100%;
       text-align: left;
     }
 

@@ -9,11 +9,6 @@ export default function Suki() {
       <NavBar />
       <div className={`${styles.page}`}>
         <main className={styles.container}>
-          <div className={styles.bioContainer}>
-         <h1 className={styles.h1Style}>Poster for Suki Waterhouse</h1>
-            <p className={styles.bio}>
-            A poster inspired by Suki Waterhouse was designed, incorporating soft vintage tones and funky typography. The composition captures her unique aesthetic, creating a visually striking and cohesive tribute to her artistic style.            </p>
-          </div>
           <div className={styles.portrait}>
             <Image
               src="/images/suki.png"
@@ -22,6 +17,11 @@ export default function Suki() {
               height={770} // Scaled height based on aspect ratio
               priority // Preloads the image for better performance
             />
+          </div>
+          <div className={styles.bioContainer}>
+         <h1 className={styles.h1Style}>Poster for Suki Waterhouse</h1>
+            <p className={styles.bio}>
+            A poster inspired by Suki Waterhouse was designed, incorporating soft vintage tones and funky typography. The composition captures her unique aesthetic, creating a visually striking and cohesive tribute to her artistic style.            </p>
           </div>
         </main>
       </div>

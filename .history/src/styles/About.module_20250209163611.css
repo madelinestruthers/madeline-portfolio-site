@@ -55,7 +55,7 @@
     }
   
     .portrait {
-      /* Remove bottom margin in horizontal layout */
+      margin-right: 4rem; /* Remove bottom margin in horizontal layout */
     }
   
     .bioContainer {
@@ -79,7 +79,7 @@
   
     .bio {
       font-size: 18px; /* Larger text for readability */
-      width:76%;
+      width:100%;
       text-align: left;
     }
 

@@ -56,7 +56,6 @@
     z-index: 10;
     font-size: 18px;
     padding-bottom: 1rem;
-    padding-top: 1rem;
   }
   
   .navbar-links a {
@@ -66,7 +65,7 @@
     color: #98deff;
     padding-right: 1.5rem;
     padding-top:  1rem ;
-    padding-bottom:  1rem ;
+    padding-bottom:  .5rem ;
    
     display: block;
     transition: color 0.3s ease;
