@@ -58,14 +58,14 @@ export default function Civica() {
         </div>
         {/* Image moves to right on desktop */}
         <div className={styles.researchImages}>
-            <Image src="/images/law-image.jpg" alt="Research Image" width={550} height={320} className={styles.lawyerImage}/>
+            <Image src="/images/law-image.jpg" alt="Research Image" width={700} height={450} className={styles.lawyerImage}/>
         </div>
     </div>
     <div className={styles.surveySection}>
     <h3>User Surveys</h3>
     <p className={styles.surveyBio}>Surveys and usability testing were conducted to gather user feedback and identify pain points. Surveys provided insights into user perceptions, while usability testing evaluated how effectively users interacted with the design. Findings informed iterative improvements, ensuring a more intuitive and user centred experience.
     </p>
-    <Image src="/images/survey-image.png" alt="Research Image" width={700} height={250} className={styles.surveyImage}/>
+    <Image src="/images/survey-image.png" alt="Research Image" width={800} height={360} className={styles.surveyImage}/>
     </div>
 </section>
 
@@ -129,7 +129,7 @@ In response, new logo concepts were developed to better align with the brand’s
         The final logo features two interlocking hearts, representing unity and Civica’s commitment to supporting its audience. This design reflects Civica’s core values while ensuring clarity and strong brand recognition.
         </p>
         <div className={styles.finalLogoContainer}>
-        <Image src="/images/final-logo-1.png" alt=" Civica Logo " width={300} height={300} />
+        <Image src="/images/final-logo-1.png" alt=" Civica Logo " width={400} height={400} />
    { /* <Image src="/images/final-logo-2.png" alt=" Civica Logo " width={400} height={400} /> */}
         </div>
         </div>
