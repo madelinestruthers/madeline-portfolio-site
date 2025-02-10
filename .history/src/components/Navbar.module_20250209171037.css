@@ -46,7 +46,7 @@
     display: none; /* Hidden by default for mobile */
     flex-direction: column;
     list-style: none;
-    text-align: left;
+    text-align: center;
     position: absolute;
     top: 100px;
     right: 30px;
@@ -55,8 +55,6 @@
     border-radius: 8px;
     z-index: 10;
     font-size: 18px;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
   }
   
   .navbar-links a {
@@ -65,8 +63,8 @@
     font-weight: 600;
     color: #98deff;
     padding-right: 1.5rem;
-    padding-top:  1rem ;
-    padding-bottom:  1rem ;
+    padding-top:  1.5rem ;
+    padding-bottom:  .5rem ;
    
     display: block;
     transition: color 0.3s ease;

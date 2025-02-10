@@ -24,7 +24,21 @@ export default function MechanicalObject() {
               priority // Preloads the image for better performance
             />
           </div>
-           
+            <div className={styles.bioContainer}>
+            <h1 className={styles.h1Style}>Original Image</h1>
+            <p className={styles.bio}>
+            The original image featured a detailed mechanical object with intricate components, depth, and metallic textures.            </p>
+            <div className={styles.portrait}>
+            <Image
+              src="/images/mechanical-drawing.png"
+              alt="Portrait of Me"
+              width={700} // Adjust width as needed
+              height={500} // Scaled height based on aspect ratio
+              priority // Preloads the image for better performance
+            />
+          </div>
+        
+            </div>
         </main>
       </div>
       <Footer />
