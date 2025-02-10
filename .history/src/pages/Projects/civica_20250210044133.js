@@ -96,7 +96,7 @@ export default function Civica() {
           {/* Wireframes & Prototypes */}
           <section className={styles.prototypeSection}>
             <h3>Figma Hifi Wireframes</h3>
-            <iframe width="900" height="750" src="https://embed.figma.com/design/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=0-1&embed-host=share" allowFullScreen></iframe>
+            <iframe width="900" height="850" src="https://embed.figma.com/design/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=0-1&embed-host=share" allowFullScreen></iframe>
 
           </section>
 

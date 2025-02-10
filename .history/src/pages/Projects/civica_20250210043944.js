@@ -58,14 +58,14 @@ export default function Civica() {
         </div>
         {/* Image moves to right on desktop */}
         <div className={styles.researchImages}>
-            <Image src="/images/law-image.jpg" alt="Research Image" width={660} height={420} className={styles.lawyerImage}/>
+            <Image src="/images/law-image.jpg" alt="Research Image" width={550} height={320} className={styles.lawyerImage}/>
         </div>
     </div>
     <div className={styles.surveySection}>
     <h3>User Surveys</h3>
     <p className={styles.surveyBio}>Surveys and usability testing were conducted to gather user feedback and identify pain points. Surveys provided insights into user perceptions, while usability testing evaluated how effectively users interacted with the design. Findings informed iterative improvements, ensuring a more intuitive and user centred experience.
     </p>
-    <Image src="/images/survey-image.png" alt="Research Image" width={680} height={300} className={styles.surveyImage}/>
+    <Image src="/images/survey-image.png" alt="Research Image" width={700} height={300} className={styles.surveyImage}/>
     </div>
 </section>
 
@@ -96,7 +96,7 @@ export default function Civica() {
           {/* Wireframes & Prototypes */}
           <section className={styles.prototypeSection}>
             <h3>Figma Hifi Wireframes</h3>
-            <iframe width="900" height="750" src="https://embed.figma.com/design/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=0-1&embed-host=share" allowFullScreen></iframe>
+            <iframe width="800" height="450" src="https://embed.figma.com/design/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=0-1&embed-host=share" allowFullScreen></iframe>
 
           </section>
 
@@ -138,7 +138,7 @@ In response, new logo concepts were developed to better align with the brand’s
           <section>
           <h3>Figma Interactive Prototype</h3>
           <br/><br/>
-            <iframe width="900" height="600" src="https://embed.figma.com/proto/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=30-1676&starting-point-node-id=30%3A1600&embed-host=share" allowFullScreen></iframe>
+            <iframe width="800" height="450" src="https://embed.figma.com/proto/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=30-1676&starting-point-node-id=30%3A1600&embed-host=share" allowFullScreen></iframe>
           </section>
         </main>
       </div>
