@@ -19,8 +19,9 @@ export default function About() {
             <Image
               src="/images/portrait.jpg"
               alt="Portrait of Me"
-              width={400} // Adjust width as needed
-              height={670} // Scaled height based on aspect ratio
+              layout="intrinsic" // Keeps the original dimensions
+              width={300} // Adjust width as needed
+              height={515} // Scaled height based on aspect ratio
               priority // Preloads the image for better performance
             />
           </div>
