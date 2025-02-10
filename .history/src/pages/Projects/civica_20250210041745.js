@@ -129,7 +129,7 @@ In response, new logo concepts were developed to better align with the brand’s
         The final logo features two interlocking hearts, representing unity and Civica’s commitment to supporting its audience. This design reflects Civica’s core values while ensuring clarity and strong brand recognition.
         </p>
         <div className={styles.finalLogoContainer}>
-        <Image src="/images/final-logo-1.png" alt=" Civica Logo " width={300} height={300} />
+        <Image src="/images/final-logo-1.png" alt=" Civica Logo " width={400} height={400} />
    { /* <Image src="/images/final-logo-2.png" alt=" Civica Logo " width={400} height={400} /> */}
         </div>
         </div>

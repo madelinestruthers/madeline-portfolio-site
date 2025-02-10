@@ -265,7 +265,7 @@ cursor: pointer;
     }
     .logoImages{
         flex-direction: row;
-        gap:2rem;
+        gap:3rem;
         margin-top: 4rem;
         margin-bottom: 6rem;
     }
