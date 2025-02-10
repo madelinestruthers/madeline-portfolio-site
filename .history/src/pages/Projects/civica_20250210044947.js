@@ -28,8 +28,8 @@ export default function Civica() {
               <Image
                 src="/images/civica-mockup.png"
                 alt="Civica Phone Prototype"
-                width={980}
-                height={680}
+                width={1200}
+                height={720}
                 priority
               />
             </div>
