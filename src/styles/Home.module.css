@@ -1,73 +1,70 @@
+/* Page Wrapper */
 .page {
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  min-height: 100vh; /* Full viewport height */
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0; /* Ensure no unwanted margins */
+  padding: 0; /* Remove extra padding */
 }
 
+/* Main Container */
 .main {
-  flex: 1; /* Allows the main content to expand and take available space */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically, optional */
-  align-items: center; /* Center content horizontally, optional */
+  justify-content: flex-start; /* Aligns content to the top */
+  align-items: center;
+  padding: 0; /* Remove any extra spacing */
+}
+
+/* Banner Container */
+.bannerContainer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  margin: 1rem 0; /* Ensure no extra margin */
+  padding: 0; /* Remove any padding */
+}
+
+/* Full-Width Image */
+.fullWidthImg {
+  width: 100%;
+  height: auto;
+  display: block;
   
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
+/* Adjust Navbar */
+.navbar {
+  margin-bottom: 0px; /* Prevent pushing content down */
+  padding-bottom: 0px;
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+/* Overlay Text */
+.overlayContent {
+  position: absolute;
+  top: 70%; /* Adjust to move text higher */
+  left: 100px;
+  transform: translateY(-50%);
+  color: #cbedfd;
+  line-height: 1.1;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+.overlayContent h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.overlayContent h2 {
+  font-size: 2rem;
+  margin: 5px 0 0;
+}
+
+/* Logo on Right */
+.logo {
+  position: absolute;
+  top: 18%;
+  right: 100px;
+  width: 155px;
 }

@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    margin: 1rem;
+    margin: 1rem 0;
     position: relative;
   }
   
@@ -56,7 +56,6 @@
     z-index: 10;
     font-size: 18px;
     padding-bottom: 1rem;
-    padding-top: 1rem;
   }
   
   .navbar-links a {

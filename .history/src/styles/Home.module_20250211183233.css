@@ -1,0 +1,69 @@
+/* Page Wrapper */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0; /* Ensure no unwanted margins */
+  padding: 0; /* Remove extra padding */
+}
+
+/* Main Container */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+  align-items: center;
+  padding: 0; /* Remove any extra spacing */
+}
+
+/* Banner Container */
+.bannerContainer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  margin: 1rem 0; /* Ensure no extra margin */
+  padding: 0; /* Remove any padding */
+}
+
+/* Full-Width Image */
+.fullWidthImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+/* Adjust Navbar */
+.navbar {
+  margin-bottom: 0px; /* Prevent pushing content down */
+  padding-bottom: 0px;
+}
+
+/* Overlay Text */
+.overlayContent {
+  position: absolute;
+  top: 72%; /* Adjust to move text higher */
+  left: 100px;
+  transform: translateY(-50%);
+  color: #c8ebfb;
+}
+
+.overlayContent h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.overlayContent h2 {
+  font-size: 1.5rem;
+  margin: 5px 0 0;
+}
+
+/* Logo on Right */
+.logo {
+  position: absolute;
+  top: 18%;
+  right: 5%;
+  width: 155px;
+}
