@@ -1,0 +1,82 @@
+:root {
+  --background: #071926;
+  --foreground: #171717;
+    --accent: #98deff; /* Change to your preferred color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #071926;
+    --foreground: #ffffff;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: comme, Poppins, sans-serif;
+  font-size: 16px;
+}
+
+/* styles*/
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Single column on mobile */
+  gap: 20px;
+  padding-top: 2rem;
+  justify-items: center;
+
+}
+
+.project-card {
+  padding-top: 15;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.);
+  transition: transform 0.2s;
+  cursor: pointer;
+  width: 100%;
+  /* Makes sure it fits nicely on smaller screens */
+  max-width: 450px;
+  /* Prevents it from becoming too wide */
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* 🔥 Tablet View (600px and up) */
+@media (min-width: 600px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+   
+  }
+}
+
+/* 🖥️ Desktop View (900px and up) */
+@media (min-width: 900px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns */
+    margin: 1rem 5rem ;
+    gap: 2rem;
+  }
+}

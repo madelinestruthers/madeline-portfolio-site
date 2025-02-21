@@ -11,11 +11,11 @@ const Footer = () => {
       <div className={styles.logo}>
         <a href="/">
         <Image
-            src="/images/eye-logo.png"
+            src="/images/ms-logo.png"
             alt="Logo"
-            width={110} // Adjust width as needed
-            height={80} // Adjust height as needed to maintain aspect ratio
-            priority
+            width={40} // Adjust width as needed
+            height={65} // Adjust height as needed to maintain aspect ratio
+
           />
         </a>
       </div>

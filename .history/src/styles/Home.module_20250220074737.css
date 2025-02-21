@@ -1,0 +1,117 @@
+/* Disable Snap Scrolling When Going Back to Top */
+.noSnap {
+  scroll-snap-type: none !important;
+}
+
+/* Snap Scroll */
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+  width: 100vw;
+}
+
+/* Project Sections */
+.projectSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 80vh;
+  padding: 20px;
+  background-color: #f7f7f7; /* Light gray background */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Reveal on Scroll */
+.projectSection.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Project Image */
+.projectImage {
+  width: 40%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.projectImage:hover {
+  transform: scale(1.05);
+}
+
+/* Project Details */
+.projectDetails {
+  width: 50%;
+  text-align: left;
+}
+
+/* Title */
+.projectDetails h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #313889;
+}
+
+/* Description */
+.projectDetails p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Back to Top Button */
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #ff8c00;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* Hover Effect */
+.scrollTop:hover {
+  background: #ffb04f;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .projectSection {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .projectImage {
+    width: 80%;
+  }
+
+  .projectDetails {
+    width: 100%;
+  }
+}

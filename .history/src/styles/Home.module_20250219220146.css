@@ -1,0 +1,116 @@
+
+
+/* Page Wrapper */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Banner Section */
+.bannerContainer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.fullWidthImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay Content */
+.overlayContent {
+  position: absolute;
+  top: 65%;
+  left: 100px;
+  transform: translateY(-50%);
+  color: #C7EDFF;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  line-height: .2;
+}
+
+.name {
+  font-size: 90px;
+  line-height: 0;
+}
+
+.overlayContent h2{
+  font-size: 60px;
+}
+
+.logo {
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  width: 20px;
+  transition: transform 0.3s ease-out;
+}
+
+/* Main Scroller */
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+
+/* Individual Image Sections */
+.imageSection {
+  scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Image Wrapper to Control Centering */
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw; /* Adjust for proper centering */
+  max-width: 600px; /* Prevents image from being too large */
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image Styling */
+.animatedImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Hover Animation */
+.imageWrapper:hover {
+  transform: scale(1.05); /* Slight zoom */
+}
+
+.animatedImage:hover {
+  transform: scale(1.1) ; /* Smooth zoom + slight rotation */
+  box-shadow: 0px 10px 30px rgba(255, 140, 0, 0.5); /* Orange glow */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .imageWrapper {
+    width: 80vw; /* Make images larger on smaller screens */
+  }
+}

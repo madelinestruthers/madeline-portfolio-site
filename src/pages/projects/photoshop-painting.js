@@ -13,7 +13,7 @@ export default function Opal() {
           <div className={styles.bioContainer}>
          <h1 className={styles.h1Style}>Photoshop Cat Painting </h1>
             <p className={styles.bio}>
-            A memorial painting of Opal was created in Photoshop, featuring a soft, blended style with a blue-orange complementary color scheme. A gentle halo adds a symbolic touch, capturing the cat’s essence with warmth and care.              </p>
+            A memorial painting of Opal the cat was created in Photoshop, featuring a soft, blended style with a blue–orange complementary color scheme. A gentle halo adds a symbolic touch, capturing the cat’s essence with warmth and care.              </p>
           </div>
           <div className={styles.portrait}>
             <Image

@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 0.2rem 0;
+  position: fixed; /* Fixes navbar on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/* Hide Navbar on Scroll Down */
+.navbar.hide {
+  transform: translateY(-100%);
+}
+
+/* Show Navbar on Scroll Up */
+.navbar.show {
+  transform: translateY(0);
+}
