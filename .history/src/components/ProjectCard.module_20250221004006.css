@@ -1,0 +1,108 @@
+/* 📱 Mobile-First: Single Column Layout */
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Default: Single column */
+    gap: 15px;
+    padding: 2rem 10px; /* Small side margins */
+    justify-content: center;
+  }
+  
+  /* 🖼️ Project Card */
+  .projectCard {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* 🌄 Image Wrapper */
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  /* 📸 Project Image */
+  .projectImage {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+  
+  /* ✨ Overlay (Dimming Effect) */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center; /* ✅ Centers title vertically */
+    justify-content: center; /* ✅ Centers title horizontally */
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* 🎤 Project Title */
+  .projectTitle {
+    font-size: 24px;  /* Keep title size */
+    font-weight: bold;
+    color: #98deff;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-bottom: 40px; /* Keeps title higher */
+    text-align: center; /* ✅ Ensures text is centered */
+    width: 100%; /* ✅ Expands title across the card */
+  }
+  
+  /* 🖱️ Hover Effects */
+  .projectCard:hover .projectImage {
+    transform: scale(1.05);
+    filter: brightness(0.6);
+  }
+  
+  .projectCard:hover .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .projectCard:hover .projectTitle {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* 🔥 Tablet View (600px and up) */
+  @media (min-width: 600px) {
+    .projects-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 20px;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto; /* Centers the container */
+    }
+  }
+  
+  /* 🖥️ Desktop View (900px and up) */
+  @media (min-width: 900px) {
+    .projects-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 20px;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .projectCard {
+      max-width: 350px;
+    }
+  
+    .projectTitle {
+      font-size: 24px; /* Larger title */
+      margin-bottom: 40px; /* Higher position */
+    }
+  }
+  

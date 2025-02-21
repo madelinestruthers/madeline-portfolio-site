@@ -1,0 +1,94 @@
+/* 🔥 Project Card Container */
+.projectCard {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+    max-width: 450px; /* Prevents it from being too large */
+    text-align: center;
+    overflow: hidden; /* Ensures title stays inside */
+  }
+  
+  /* 🖼️ Image Wrapper */
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  /* 🌄 Project Image */
+  .projectImage {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+  
+  /* ✨ Overlay (Dimming Effect) */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  /* 🎤 Project Title */
+  .projectTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-bottom: 15px;
+  }
+  
+  /* 🖱️ Hover Effect */
+  .projectCard:hover .projectImage {
+    transform: scale(1.05);
+    filter: brightness(0.6);
+  }
+  
+  .projectCard:hover .overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .projectCard:hover .projectTitle {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* 📱 Mobile-First Layout */
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 2rem;
+    justify-items: center;
+  }
+  
+  /* 🔥 Tablet View (600px and up) */
+  @media (min-width: 600px) {
+    .projects-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* 🖥️ Desktop View (900px and up) */
+  @media (min-width: 900px) {
+    .projects-container {
+      grid-template-columns: repeat(3, 1fr);
+      margin: 1rem 5rem;
+      gap: 2rem;
+    }
+    .projectCard {
+      max-width: 400px;
+    }
+  }
+  

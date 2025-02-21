@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./ProjectCard.module.css";
+import styles from "@/styles/ProjectCard.module.css"; // Import CSS module
 
 const ProjectCard = ({ title, image, link }) => {
     return (
