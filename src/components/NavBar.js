@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
@@ -15,7 +17,7 @@ const NavBar = () => {
             src="/images/ms-logo.svg"
             alt="Logo"
             width={70} // Adjust width as needed
-            height={20} // Adjust height as needed to maintain aspect ratio
+            height={18} // Adjust height as needed to maintain aspect ratio
             priority
           />
         </a>
@@ -32,9 +34,7 @@ const NavBar = () => {
           isMenuOpen ? styles["navbar-links-open"] : ""
         }`}
       >
-        <li>
-          <a href="/">Home</a>
-        </li>
+       
         <li>
           <a href="/projects">Projects</a>
         </li>

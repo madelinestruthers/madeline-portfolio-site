@@ -28,8 +28,8 @@ export default function Civica() {
               <Image
                 src="/images/civica-mockup.png"
                 alt="Civica Phone Prototype"
-                width={980}
-                height={680}
+                width={1000}
+                height={660}
                 priority
               />
             </div>
@@ -57,9 +57,7 @@ export default function Civica() {
     </ul>
         </div>
         {/* Image moves to right on desktop */}
-        <div className={styles.researchImages}>
-            <Image src="/images/law-image.jpg" alt="Research Image" width={660} height={420} className={styles.lawyerImage}/>
-        </div>
+        
     </div>
     <div className={styles.surveySection}>
     <h3>User Surveys</h3>
@@ -72,26 +70,34 @@ export default function Civica() {
           {/* The Design Process */}
           <section className={styles.designProcess}>
             <h2 className={styles.h2}>The Design Process</h2>
-         
-            <div className={styles.designImages}>
+            <h3>Color Palette</h3>
+            <div className={styles.colorPalette}>
+           
+      <div className={styles.brandSection} style={{ backgroundColor: "#313889", color: "white" }}>
+        <p>PRIMARY<br />Hex #313889<br />RGB 49, 56, 138</p>
+      </div>
+      <div className={styles.brandSection} style={{ backgroundColor: "#8FA0F1", color: "black" }}>
+        <p>SECONDARY<br />Hex #8FA0F1<br />RGB 143, 160, 241</p>
+      </div>
+      <div className={styles.brandSection} style={{ backgroundColor: "#66B1DA", color: "black" }}>
+        <p>TERTIARY<br />Hex #66B1DA<br />RGB 102, 177, 218</p>
+      </div>
+      <div className={styles.brandSection} style={{ backgroundColor: "#FFFFFD", color: "black" }}>
+        <p>BACKGROUND/TEXT<br />Hex #FFFFFD<br />RGB 255, 255, 253</p>
+      </div>
+      <div className={styles.brandSection} style={{ backgroundColor: "#EAF0F6", color: "black" }}>
+        <p>LIGHT VARIANT<br />Hex #EAF0F6<br />RGB 234, 240, 246</p>
+      </div>
+      <div className={styles.brandSection} style={{ backgroundColor: "#0E131F", color: "white" }}>
+        <p>BACKGROUND/TEXT<br />Hex #0E131F<br />RGB 14, 19, 31</p>
+      </div>
+    </div>
             
-            <Image src="/images/design-sketch.png" alt="Design Sketches" width={850} height={550} className={styles.designImage}/>
-            <Image src="/images/home-draft.png" alt="Design Sketches" width={260} height={550} className={styles.designImage}/>
-            </div>
+           
+           
          </section>
 
-          {/* Branding */}
-          <section className={styles.brandSection}>
-            <div className={styles.colorPalette}>
-              <h3>Colour Palette</h3>
-              <br/>
-              <Image src="/images/colours.png" alt="Color Palette" width={850} height={500} />
-            </div>
-           {/* <div className={styles.typography}>
-              <h3>Typography</h3>
-              <p>Font: Lexend</p>
-  </div>*/}
-          </section>
+         
 
           {/* Wireframes & Prototypes */}
           <section className={styles.prototypeSection}>

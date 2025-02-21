@@ -21,6 +21,7 @@ export default function Suki() {
               width={600} // Adjust width as needed
               height={770} // Scaled height based on aspect ratio
               priority // Preloads the image for better performance
+              allowFullScreen
             />
           </div>
         </main>

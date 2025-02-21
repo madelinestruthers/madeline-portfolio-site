@@ -1,0 +1,75 @@
+
+
+/* Page Wrapper */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Banner Section */
+.bannerContainer {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.fullWidthImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Overlay Content */
+.overlayContent {
+  position: absolute;
+  top: 72%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #C7EDFF;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  line-height: 1;
+}
+
+.name {
+  font-size: 46px;
+  line-height: .5;
+}
+
+.logo {
+  position: absolute;
+  top: 20%;
+  right: 8%;
+  width: 150px;
+  transition: transform 0.3s ease-out;
+}
+
+/* snap scroll */
+
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+  width: 100vw;
+}
+
+.scroller section img {
+  width: auto;
+  height: 100vh;
+}
