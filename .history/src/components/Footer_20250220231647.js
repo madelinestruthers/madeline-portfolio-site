@@ -13,8 +13,8 @@ const Footer = () => {
         <Image
             src="/images/ms-logo.png"
             alt="Logo"
-            width={30} 
-            height={48} 
+            width={25} 
+            height={60} 
           />
         </a>
       </div>

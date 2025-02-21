@@ -14,7 +14,7 @@ const Footer = () => {
             src="/images/ms-logo.png"
             alt="Logo"
             width={30} 
-            height={48} 
+            height={50} 
           />
         </a>
       </div>

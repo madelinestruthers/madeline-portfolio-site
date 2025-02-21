@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px; /* Adjust the side padding as needed */
-    background-color: hsl(210, 82%, 15%);
+    background-color: #072747;
     margin-top: 2rem;
   }
   
@@ -34,7 +34,7 @@
   }
   
   .link:hover {
-    color: #FF8C00
+    border-bottom: 4px solid #FF8C00; /* Thick orange underline */
   }
   
   .icon {
