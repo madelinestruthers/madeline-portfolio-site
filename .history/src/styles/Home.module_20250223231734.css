@@ -37,16 +37,14 @@
   color: #C7EDFF;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
   line-height: .5;
-  top: 50%;
+  top: 30%;
   left: 20%;
-  position: absolute;
-  width: 100%;
 }
 
 .name {
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1;
-  width: 100%;
+  width: 50%;
 }
 
 .jobTitle {
@@ -55,8 +53,8 @@
   /* Start fully hidden */
   animation: fadeIn 2s ease-in-out forwards;
   /* Smooth fade-in */
-  width: 100%;
-  line-height: 1.2;
+  width: 50%;
+  line-height: 1;
   text-align: left;
 }
 
@@ -188,9 +186,6 @@
 color: #FFB04F;
 cursor: pointer;
 }
-.projectText{
-  display: none;
-}
 
 /* Responsive - Desktop: Two Column Layout */
 @media (min-width: 768px) {
@@ -204,8 +199,6 @@ cursor: pointer;
 
   .projectText{
     margin-left: 2rem;
-    width: 70%;
-    display: block;
   }
   .scrollerProjects {
     flex-direction: row;
@@ -229,5 +222,7 @@ cursor: pointer;
     line-height: 0.2;
   }
 
-
+  .projectText {
+    width: 50%;
+  }
 }

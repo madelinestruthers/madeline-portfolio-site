@@ -263,7 +263,7 @@ cursor: pointer;
 
     .bio {
         font-size: 18px;
-      
+        width: 60%;
     }
 
     .portrait img {

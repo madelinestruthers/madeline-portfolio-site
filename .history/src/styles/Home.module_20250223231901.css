@@ -55,7 +55,7 @@
   /* Start fully hidden */
   animation: fadeIn 2s ease-in-out forwards;
   /* Smooth fade-in */
-  width: 100%;
+  width: 90%;
   line-height: 1.2;
   text-align: left;
 }
@@ -188,9 +188,6 @@
 color: #FFB04F;
 cursor: pointer;
 }
-.projectText{
-  display: none;
-}
 
 /* Responsive - Desktop: Two Column Layout */
 @media (min-width: 768px) {
@@ -204,8 +201,6 @@ cursor: pointer;
 
   .projectText{
     margin-left: 2rem;
-    width: 70%;
-    display: block;
   }
   .scrollerProjects {
     flex-direction: row;
@@ -229,5 +224,7 @@ cursor: pointer;
     line-height: 0.2;
   }
 
-
+  .projectText {
+    width: 50%;
+  }
 }
