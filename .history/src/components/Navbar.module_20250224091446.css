@@ -125,7 +125,7 @@
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
   .navbar {
-    padding: 20px 100px;
+    padding: 10px 100px;
   }
 
   .navbar-logo img {
@@ -134,7 +134,7 @@
   }
 
   .navbar-links a {
-    font-size: 18px;
+    font-size: 20px;
   }
 
 }
