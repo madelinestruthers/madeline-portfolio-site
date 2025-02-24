@@ -94,13 +94,16 @@
       padding: 2rem;
       max-width: 1200px;
       margin: 0 auto;
+      background-color: bisque;
     }
- 
+  
+    .projectCard {
+      max-width: 350px;
+    }
   
     .projectTitle {
       font-size: 24px; /* Larger title */
       margin-bottom: 40px; /* Higher position */
-      padding:10px;
     }
   }
   

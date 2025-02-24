@@ -90,17 +90,17 @@
   @media (min-width: 900px) {
     .projects-container {
       grid-template-columns: repeat(3, 1fr); /* 3 columns */
-      gap: 20px;
+      gap: 10px;
       padding: 2rem;
       max-width: 1200px;
       margin: 0 auto;
     }
+  
  
   
     .projectTitle {
       font-size: 24px; /* Larger title */
       margin-bottom: 40px; /* Higher position */
-      padding:10px;
     }
   }
   

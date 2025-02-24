@@ -53,6 +53,7 @@ a {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
   width: 100%;
+  max-width: 450px; /* Default max width */
   text-align: center;
 }
 
@@ -84,11 +85,11 @@ a {
 @media (min-width: 1400px) {
   .projects-container {
     grid-template-columns: repeat(4, 1fr); /* Four columns */
-    margin: 2rem 200px 6rem 200px;
+    margin: 2rem 150px 6rem 150px;
     gap: 8rem;
   }
 
   .project-card {
-    width: 700px; /* Larger cards */
+    max-width: 500px; /* Larger cards */
   }
 }

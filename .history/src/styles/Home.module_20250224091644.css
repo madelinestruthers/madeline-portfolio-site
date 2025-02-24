@@ -143,6 +143,7 @@
 /* Project Images */
 .posterImage {
   width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
@@ -234,7 +235,7 @@ cursor: pointer;
 @media (min-width: 1024px){
   .projectText{
     margin-left: 2rem;
-    width: 80%;
+    width: 70%;
     display: block;
   }
   .scrollerProjects {
@@ -242,13 +243,9 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     text-align: left;
-    gap: 4rem;
+    gap: 2rem;
     height: 90vh;
     width: 100vw;
-  }
-  .posterImage{
-    height: 70vh;
-    width: 90vw;
   }
 
 }

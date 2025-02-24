@@ -53,6 +53,7 @@ a {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
   width: 100%;
+  max-width: 450px; /* Default max width */
   text-align: center;
 }
 
@@ -89,6 +90,6 @@ a {
   }
 
   .project-card {
-    width: 700px; /* Larger cards */
+    width: 600px; /* Larger cards */
   }
 }
