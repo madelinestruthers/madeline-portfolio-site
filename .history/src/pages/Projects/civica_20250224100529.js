@@ -19,18 +19,18 @@ export default function Civica() {
               <h2 className={styles.subHeading}>Role: UX & Graphic Designer</h2>
               <p className={styles.bio}>
                 A legal support app designed to empower underprivileged women by providing accessible tools and guidance for navigating legal challenges.
-              </p>
-              <h2 className={styles.link}> <a href="https://www.civicalaw.ca/">civicalaw.ca</a></h2>
+                </p>
+                <h2 className={styles.link}> <a href="https://www.civicalaw.ca/">civicalaw.ca</a></h2>
               <div className={styles.problemSolution}>
                 <div className={styles.problemBox}>
                   <h3>Problem</h3>
                   <p>
-                    Many underprivileged women lack access to legal information, face financial barriers, and fear legal proceedings, making it difficult to understand their rights.                  </p>
+                  Many underprivileged women lack access to legal information, face financial barriers, and fear legal proceedings, making it difficult to understand their rights.                  </p>
                 </div>
                 <div className={styles.solutionBox}>
                   <h3>Solution</h3>
                   <p>
-                    Civica provides a user-friendly legal aid app with multilingual chatbot support, simplified legal documents, and access to legal, mental health, and counseling resources.                   </p>
+                  Civica provides a user-friendly legal aid app with multilingual chatbot support, simplified legal documents, and access to legal, mental health, and counseling resources.                   </p>
                 </div>
               </div>
 
@@ -69,7 +69,7 @@ export default function Civica() {
                 </ul>
               </div>
               {/* Image moves to right on desktop */}
-              <Image src="/images/research.png" alt="Research Image" width={680} height={300} className={styles.researchImages} />
+ <Image src="/images/research.png" alt="Research Image" width={680} height={300} className={styles.researchImages} />
             </div>
             <div className={styles.surveySection}>
               <h3>User Surveys</h3>
@@ -80,14 +80,14 @@ export default function Civica() {
           </section>
 
           <div className={styles.surveySection}>
-            <h3>User Personas</h3>
-            <p className={styles.personaBio}>
-              The Civica team developed a user persona to accurately represent middle-aged women in vulnerable situations, focusing on their legal, financial, and emotional challenges. Through research and case studies, we identified their needs and barriers, shaping our design and marketing strategies to ensure Civica is accessible, supportive, and empowering for our target audience.              </p>
-            <div className={styles.personaContainer}>
+              <h3>User Personas</h3>
+              <p className={styles.personaBio}>
+The Civica team developed a user persona to accurately represent middle-aged women in vulnerable situations, focusing on their legal, financial, and emotional challenges. Through research and case studies, we identified their needs and barriers, shaping our design and marketing strategies to ensure Civica is accessible, supportive, and empowering for our target audience.              </p>
+              <div className={styles.personaContainer}>
               <Image src="/images/persona-2.png" alt="Research Image" width={600} height={900} className={styles.personaImage} />
               <Image src="/images/persona-1.png" alt="Research Image" width={600} height={900} className={styles.personaImage} />
             </div>
-          </div>
+            </div>
 
 
 
@@ -122,13 +122,13 @@ export default function Civica() {
           </section>
 
           {/* Wireframes & Prototypes */}
-
+         
           {/* Final Logo */}
           <section className={styles.logoSection}>
             <h3>Refining Brand Identity – Logo Evolution</h3>
             <div className={styles.researchContent}>
 
-              <p className={styles.logoBio}>
+              <p className={styles.finalLogoBio}>
                 The original Civica logo featured a heart, a feminine silhouette, and a stylized "C." However, survey feedback indicated that the design was often misinterpreted as an "E," causing confusion among users.
                 <br /> <br />
                 In response, new logo concepts were developed to better align with the brand’s identity while ensuring clear and effective visual communication with the target audience.
@@ -148,26 +148,13 @@ export default function Civica() {
             <br /><br />
             <h3>Final Logo</h3>
 
-            <p className={styles.finalLogoBio}>
-              The final logo features two interlocking hearts, representing unity and Civica’s commitment to supporting its audience. This design reflects Civica’s core values while ensuring clarity and strong brand recognition.
-            </p>
-            <div className={styles.finalLogoContainer}>
-              <Image src="/images/final-logo-1.png" alt=" Civica Logo " width={330} height={320} />
-            </div>
-<br/>
-            <div className={styles.wireframes}>
-            <h2 className={styles.h2}>Figma Wireframes</h2>
-          <h3>Original Design</h3>
-          <div className={styles.finalLogoContainer}>
-              <Image src="/images/original-wireframes.png" alt=" Civica Logo " width={900} height={350} className={styles.wireframes} />
-            </div>
-           
-            <h3>Final Design</h3>
-            <div className={styles.finalLogoContainer}>
-            <Image src="/images/final-version.png" alt=" Civica Logo " width={900} height={350} className={styles.wireframes} />
-            </div>
-            </div>
-
+              <p className={styles.finalLogoBio}>
+                The final logo features two interlocking hearts, representing unity and Civica’s commitment to supporting its audience. This design reflects Civica’s core values while ensuring clarity and strong brand recognition.
+              </p>
+              <div className={styles.finalLogoContainer}>
+                <Image src="/images/final-logo-1.png" alt=" Civica Logo " width={330} height={320} />
+              </div>
+         
           </section>
           <section>
             <h3>Figma Interactive Prototype</h3>

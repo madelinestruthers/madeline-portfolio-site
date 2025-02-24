@@ -154,12 +154,12 @@ export default function Civica() {
             <div className={styles.finalLogoContainer}>
               <Image src="/images/final-logo-1.png" alt=" Civica Logo " width={330} height={320} />
             </div>
-<br/>
+
             <div className={styles.wireframes}>
-            <h2 className={styles.h2}>Figma Wireframes</h2>
+          <h3>Wireframe Design</h3>
           <h3>Original Design</h3>
           <div className={styles.finalLogoContainer}>
-              <Image src="/images/original-wireframes.png" alt=" Civica Logo " width={900} height={350} className={styles.wireframes} />
+              <Image src="/images/original-wireframes.png" alt=" Civica Logo " width={900} height={350} />
             </div>
            
             <h3>Final Design</h3>

@@ -230,13 +230,8 @@ cursor: pointer;
     flex-direction: column;
     gap: 1rem;
   }
-  .personaImage{
-    border-radius: 10px;
-  }
-  .wireframes{
-    border-radius: 10px;
-  }
 
+ 
 /* Responsive Styling */
 @media (min-width: 768px) {
     .heroSection {
@@ -409,7 +404,7 @@ cursor: pointer;
        
     }
     .finalLogoBio{
-        width: 40%;
+        width: 50%;
         margin-right: 8rem;
         margin-top: 0;
         margin-bottom: 3rem;
