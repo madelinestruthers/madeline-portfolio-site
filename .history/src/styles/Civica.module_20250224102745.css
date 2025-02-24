@@ -231,11 +231,9 @@ cursor: pointer;
     gap: 1rem;
   }
   .personaImage{
-    border-radius: 10px;
+    border-radius: 20px;
   }
-  .wireframes{
-    border-radius: 10px;
-  }
+
 
 /* Responsive Styling */
 @media (min-width: 768px) {
