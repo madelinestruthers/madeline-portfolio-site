@@ -205,7 +205,6 @@ cursor: pointer;
   .projectText{
     margin-left: 2rem;
     width: 70%;
-    display: block;
   }
   .scrollerProjects {
     flex-direction: row;

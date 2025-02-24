@@ -1,0 +1,336 @@
+/* Mobile-First Styling */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #cbedfd;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Main Container */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Aligns everything to the left */
+    gap: 40px;
+    width: 100%;  /* Ensures full width */
+    padding: 20px; /* Prevent unwanted left space */
+}
+
+/* Hero Section */
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.bioContainer {
+    max-width: 90%;
+}
+
+.h1Style {
+    font-size: 30px; 
+    color: #98deff;     
+    font-weight: bold;
+    text-align: left;
+}
+
+.link{
+    color: #98deff;
+    text-decoration: underline;
+    padding: 10px 10px 10px 0;
+    transition: color 0.3s ease;
+}
+
+.link:hover{
+color: #FFB04F;
+cursor: pointer;
+}
+
+.subHeading {
+    font-size: 24px;
+    color: #C7EDFF;
+}
+
+.bio {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbedfd;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Image Styles */
+.portrait img {
+    width: 80vw;
+    height: 50vh;
+
+}
+
+/* User Research */
+.researchSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stacked on mobile */
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.researchContent {
+    display: flex;
+    flex-direction: column; /* Default: stacked */
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Image Styling */
+.researchImages {
+    width: 100%;
+    max-width: 400px;
+}
+
+.logoImages{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+/* The Design Process */
+.designProcess {
+    text-align: left;
+    width: 100%;
+}
+
+/* Branding */
+.brandSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.colorPalette, .typography {
+    text-align: left;
+}
+
+/* Prototype Section */
+.prototypeSection {
+    text-align: left;
+    width: 100%;
+}
+
+.prototypeSection iframe {
+    border: none;
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+}
+
+/* Final Logo */
+.logoSection {
+    text-align: left;
+    width: 100%;
+}
+
+/* Mobile-First: Single Column Layout */
+.colorPalette {
+    display: grid;
+    grid-template-columns: 1fr; /* One column on mobile */
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Brand Color Sections */
+  .brandSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Text Styling */
+  .brandSection p {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Hover Effect */
+  .brandSection:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .keyFindings{
+    width: 70%;
+  }
+
+  .logoParagraph{
+    width: 80%;
+  }
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .heroSection {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .colorPalette {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    .bioContainer {
+        max-width: 50%;
+    }
+
+
+    .researchImages {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .brandSection {
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .h2{
+        font-size: 60px;  
+        color: #98deff;     
+        font-weight: bold;
+        margin-bottom: 2rem;
+    
+    }
+
+    .colorPalette {
+        grid-template-columns: repeat(3, 1fr); /* Expands to 3 columns */
+        max-width: 900px;
+        margin-left: 0; /* Aligns to the left */
+        margin-right: auto; /* Keeps left alignment */
+        justify-content: flex-start;
+      }
+
+    .designProcess{
+        margin-top: 4rem;
+    }
+    .container h3{
+        font-size: 30px;  
+        color: #98deff;     
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .container li {
+        font-size: 18px;
+
+    }
+
+    .container p {
+        font-size: 18px;
+    }
+
+    .bioContainer{
+        margin-bottom: 6rem;
+    }
+    
+
+    .h1Style {
+        font-size: 60px;  
+      color: #98deff;     
+      font-weight: bold;
+     
+    }
+
+    .bio {
+        font-size: 18px;
+        width: 60vw;
+    }
+
+    .portrait img {
+        width: 50vw;
+        height: 70vh;
+    }
+
+    .researchContent {
+        flex-direction: row; /* Text left, image right */
+        align-items: center;
+    }
+
+    .lawyerBio {
+        width: 70%; /* Ensure proper text width */
+        font-size: 18px;
+    }
+
+    .researchImages {
+        width: auto;
+        max-width: 700px; /* Ensure proper image size */
+        margin-bottom: 0;
+        margin-left: 3rem;
+       
+    }
+    .lawyerImage{
+        border-radius: 30px;
+       
+    }
+
+    .prototypeSection iframe {
+        width: 900px;
+        height: 450px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .surveyBio{
+        width: 50%; /* Ensure proper text width */
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 4rem;
+    }
+    .surveyImage{
+        margin-bottom: 4rem;
+    }
+   
+    .designImage{
+        margin-top: 3rem;
+       border-radius: 30px;
+    }
+    .designImages{
+        display: flex;
+        flex-direction: row;
+        gap:10rem;
+        justify-content: space-apart;
+    }
+    .logoBio{
+        width: 50%;
+        margin-right: 6rem;
+        margin-top: 0;
+        margin-bottom: 6rem;
+    }
+    .logoImages{
+        flex-direction: row;
+        gap:4rem;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        justify-content: flex-start;
+    }
+
+}
