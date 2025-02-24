@@ -1,0 +1,101 @@
+/* Page Wrapper */
+  .page {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+    /* Main Container */
+  .container {
+    flex: 1; /* Allows the main content to expand and take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically, optional */
+    align-items: center; /* Center content horizontally, optional */
+    padding: 20px 90px;
+  }
+
+  /* Portrait Styling */
+  .portrait {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 2.5rem; /* Add spacing on smaller screens */
+
+  }
+  
+  /* Bio Section */
+  .bioContainer {
+    text-align: left; /* Center text for mobile-first */
+  }
+  
+  .h1Style {
+    font-size: 30px; 
+    color: #98deff;     
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .bio {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbedfd;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .carouselWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  /* Make Carousel Bigger */
+  .carouselWrapper > div {
+    width: 100%; /* ✅ Increase size on mobile */
+    max-width: 500px; /* ✅ Large size on desktop */
+    height: auto;
+    margin-top: 3rem;
+  }
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row; 
+      flex-wrap: wrap;
+      align-items: flex-start;
+      text-align: left; /* Align text to the left for larger screens */
+      padding: 20px 100px;
+    }
+  
+  
+    .bioContainer {
+      flex: 1; /* Allow text to take up remaining space */
+      width:50%;
+
+    }
+  }
+  
+  @media (min-width: 1024px) {
+  
+    .container{
+      margin-top: 4rem;
+    }
+    .h1Style {
+      font-size: 60px;  
+      color: #98deff;     
+      font-weight: bold;
+      text-align: left;
+    }
+  
+    .bio {
+      font-size: 18px; /* Larger text for readability */
+      width:76%;
+      text-align: left;
+    }
+
+    .bioContainer{
+      margin-left: 2rem;
+    }
+  }
+  
