@@ -182,12 +182,7 @@ cursor: pointer;
 
   .logoParagraph{
     width: 80%;
-  }
-  .spacing{
-    margin-top: 4rem;
-    margin-bottom: 2rem;
 
-  }
 /* Responsive Styling */
 @media (min-width: 768px) {
     .heroSection {
