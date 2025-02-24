@@ -134,7 +134,7 @@ export default function Civica() {
                 In response, new logo concepts were developed to better align with the brand’s identity while ensuring clear and effective visual communication with the target audience.
               </p>
               <div className={styles.finalLogoContainer}>
-                <Image src="/images/original-logo.png" alt="Original Logo" width={300} height={310} className={styles.logoDraft}/>
+                <Image src="/images/original-logo.png" alt="Original Logo" width={300} height={310} />
               </div>
             </div>
             <br /><br />

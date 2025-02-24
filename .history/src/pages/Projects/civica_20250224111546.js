@@ -134,16 +134,16 @@ export default function Civica() {
                 In response, new logo concepts were developed to better align with the brand’s identity while ensuring clear and effective visual communication with the target audience.
               </p>
               <div className={styles.finalLogoContainer}>
-                <Image src="/images/original-logo.png" alt="Original Logo" width={300} height={310} className={styles.logoDraft}/>
+                <Image src="/images/original-logo.png" alt="Original Logo" width={300} height={310} />
               </div>
             </div>
             <br /><br />
             <h3>Logo Ideation Begins Again</h3>
             <div className={styles.logoImages}>
               <Image src="/images/logo-draft-1.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
-              <Image src="/images/logo-draft-2.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft}/>
-              <Image src="/images/logo-draft-3.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft}/>
-              <Image src="/images/logo-draft-4.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft}/>
+              <Image src="/images/logo-draft-2.png" alt=" Logo Draft" width={250} height={250} />
+              <Image src="/images/logo-draft-3.png" alt=" Logo Draft" width={250} height={250} />
+              <Image src="/images/logo-draft-4.png" alt=" Logo Draft" width={250} height={250} />
             </div>
             <br /><br />
             <h3>Final Logo</h3>

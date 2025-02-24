@@ -100,9 +100,6 @@ cursor: pointer;
     gap:40px;
     border-radius: 10px;
 }
-.logoDraft{
-    border-radius: 10px;
-}
 /* The Design Process */
 .designProcess {
     text-align: left;
@@ -269,8 +266,8 @@ cursor: pointer;
     }
 
     .portrait img {
-        max-width: 45vw;
-        max-height: 75vh;
+        max-width: 40vw;
+        max-height: 70vh;
     }
 
     .researchImages {
