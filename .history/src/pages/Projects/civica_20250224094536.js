@@ -73,7 +73,7 @@ export default function Civica() {
             </div>
             <div className={styles.surveySection}>
               <h3>User Surveys</h3>
-              <p className={styles.personaBio}>Surveys and usability testing were conducted to gather user feedback and identify pain points. Surveys provided insights into user perceptions, while usability testing evaluated how effectively users interacted with the design. Findings informed iterative improvements, ensuring a more intuitive and user centred experience.
+              <p className={styles.surveyBio}>Surveys and usability testing were conducted to gather user feedback and identify pain points. Surveys provided insights into user perceptions, while usability testing evaluated how effectively users interacted with the design. Findings informed iterative improvements, ensuring a more intuitive and user centred experience.
               </p>
               <Image src="/images/survey-image.png" alt="Research Image" width={680} height={300} className={styles.surveyImage} />
             </div>
@@ -83,10 +83,7 @@ export default function Civica() {
               <h3>User Personas</h3>
               <p className={styles.personaBio}>
 The Civica team developed a user persona to accurately represent middle-aged women in vulnerable situations, focusing on their legal, financial, and emotional challenges. Through research and case studies, we identified their needs and barriers, shaping our design and marketing strategies to ensure Civica is accessible, supportive, and empowering for our target audience.              </p>
-              <div className={styles.personaContainer}>
               <Image src="/images/persona-2.png" alt="Research Image" width={600} height={900} className={styles.personaImage} />
-              <Image src="/images/persona-1.png" alt="Research Image" width={600} height={900} className={styles.personaImage} />
-            </div>
             </div>
 
 
