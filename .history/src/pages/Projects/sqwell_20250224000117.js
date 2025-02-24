@@ -119,7 +119,7 @@ export default function Sqwell() {
 
           <iframe width="500" height="650" src="https://embed.figma.com/design/t5tkBHdTWOAe2WK3hbr7mE/MDIA-2106---Sqwell---Set-F?node-id=424-1416&embed-host=share" allowfullscreen></iframe>
           </section>
-          <h3 classname={styles.spacing}> <a href="https://sqwell.vercel.app/">Click Here to Open Web App!</a></h3>
+          <h3 classname={styles.spacing}> <a href="https://sqwell.vercel.app/">Click Here to Open Web App</a></h3>
         </main>
       </div>
       <br/><br/>

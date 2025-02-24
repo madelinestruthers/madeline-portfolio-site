@@ -183,11 +183,7 @@ cursor: pointer;
   .logoParagraph{
     width: 80%;
   }
-  .spacing{
-    margin-top: 4rem;
-    margin-bottom: 2rem;
 
-  }
 /* Responsive Styling */
 @media (min-width: 768px) {
     .heroSection {
@@ -226,7 +222,9 @@ cursor: pointer;
         margin-bottom: 2rem;
     
     }
-   
+    .h3Spacing{
+        margin-top: 2rem;
+    }
 
     .colorPalette {
         grid-template-columns: repeat(3, 1fr); /* Expands to 3 columns */

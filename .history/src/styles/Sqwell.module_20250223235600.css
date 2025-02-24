@@ -184,9 +184,7 @@ cursor: pointer;
     width: 80%;
   }
   .spacing{
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-
+    margin-top: 2rem;
   }
 /* Responsive Styling */
 @media (min-width: 768px) {

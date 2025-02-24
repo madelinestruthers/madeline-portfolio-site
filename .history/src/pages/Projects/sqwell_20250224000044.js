@@ -69,8 +69,8 @@ export default function Sqwell() {
     </div>
 
 <div >
-<br/>
-    <h3 classname={styles.spacing} >Logo Design</h3>  
+ 
+    <h3 classname={styles.spacing} >Logo Design</h3>
 
     <p className={styles.logoParagraph} >Sqwell's logo incorporates our mascot, Sqwee, seamlessly into the company name, using a vibrant orange as the primary color to reflect our signature palette. This bold and energetic color enhances brand recognition and ties the design to our playful and approachable identity. The font Nunito, consistent with our body text, reinforces cohesion, while three-dimensional effects created with shadows and highlights add depth. Soft, rounded edges further contribute to the modern and friendly feel of the logo.
     <br/><br/>
@@ -103,7 +103,7 @@ export default function Sqwell() {
         <li>Logo Color – <br/>The original logo color received negative feedback, as users associated it with unpleasant connotations. Changing the logo color to orange improved its appeal and better aligned with the brand’s identity.</li> <br/>
     </ul>
 </div>
-<br/>
+
     <h3 classname={styles.spacing}>Original Badge Library Icon vs Revised Version</h3>
         <div className={styles.logoImages}>
         <Image src="/images/old-profile.png" alt=" Logo Draft" width={300} height={360} />
@@ -119,7 +119,7 @@ export default function Sqwell() {
 
           <iframe width="500" height="650" src="https://embed.figma.com/design/t5tkBHdTWOAe2WK3hbr7mE/MDIA-2106---Sqwell---Set-F?node-id=424-1416&embed-host=share" allowfullscreen></iframe>
           </section>
-          <h3 classname={styles.spacing}> <a href="https://sqwell.vercel.app/">Click Here to Open Web App!</a></h3>
+          <h3 classname={styles.spacing}> <a href="https://sqwell.vercel.app/">Click Here to Open Web App</a></h3>
         </main>
       </div>
       <br/><br/>

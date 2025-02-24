@@ -183,11 +183,11 @@ cursor: pointer;
   .logoParagraph{
     width: 80%;
   }
-  .spacing{
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+  .h3Spacing{
+    margin-top: 2rem;
+    background-color: #FFB04F;
+}
 
-  }
 /* Responsive Styling */
 @media (min-width: 768px) {
     .heroSection {
