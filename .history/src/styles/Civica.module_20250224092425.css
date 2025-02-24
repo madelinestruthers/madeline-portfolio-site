@@ -66,8 +66,6 @@ cursor: pointer;
 
 /* Image Styles */
 .portrait img {
-    width: 80vw;
-    height: 50vh;
 
 }
 
@@ -249,8 +247,7 @@ cursor: pointer;
     }
 
     .portrait img {
-        max-width: 40vw;
-        max-height: 70vh;
+        max-width: 700px;
     }
 
     .researchImages {

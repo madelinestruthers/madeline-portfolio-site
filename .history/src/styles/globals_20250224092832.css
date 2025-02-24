@@ -81,14 +81,5 @@ a {
 }
 
 /* 🖥️ Large Desktop View (1400px and up) */
-@media (min-width: 1600px) {
-  .projects-container {
-    grid-template-columns: repeat(4, 1fr); /* Four columns */
-    margin: 2rem 200px 6rem 200px;
-    gap: 8rem;
-  }
 
-  .project-card {
-    width: 700px; /* Larger cards */
-  }
 }
