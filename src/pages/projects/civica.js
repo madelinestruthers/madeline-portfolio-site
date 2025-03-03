@@ -20,7 +20,9 @@ export default function Civica() {
               <p className={styles.bio}>
                 A legal support app designed to empower underprivileged women by providing accessible tools and guidance for navigating legal challenges.
               </p>
-              <h2 className={styles.link}> <a href="https://www.civicalaw.ca/">civicalaw.ca</a></h2>
+              <h2 className={styles.link}> <a href="https://www.civicalaw.ca/" target="_blank" rel="noopener noreferrer">Civica Website</a></h2>
+              <h2 className={styles.link}> <a href="https://www.figma.com/proto/0NxjFtht1BziwLShVjdx5B/Civica-2.0?content-scaling=fixed&kind=proto&node-id=30-1676&scaling=scale-down&starting-point-node-id=30%3A1600&t=g9MmfxrmwiapgGrs-1" target="_blank" rel="noopener noreferrer">
+                Figma Prototype</a></h2>
               <div className={styles.problemSolution}>
                 <div className={styles.problemBox}>
                   <h3>Problem</h3>
@@ -69,7 +71,7 @@ export default function Civica() {
                 </ul>
               </div>
               {/* Image moves to right on desktop */}
-              <Image src="/images/research.png" alt="Research Image" width={680} height={300} className={styles.researchImages} />
+              <Image src="/images/research.png" alt="Research Image" width={700} height={300} className={styles.researchImages} />
             </div>
             <div className={styles.surveySection}>
               <h3>User Surveys</h3>
@@ -84,8 +86,8 @@ export default function Civica() {
             <p className={styles.personaBio}>
               The Civica team developed a user persona to accurately represent middle-aged women in vulnerable situations, focusing on their legal, financial, and emotional challenges. Through research and case studies, we identified their needs and barriers, shaping our design and marketing strategies to ensure Civica is accessible, supportive, and empowering for our target audience.              </p>
             <div className={styles.personaContainer}>
-              <Image src="/images/persona-2.png" alt="Research Image" width={600} height={900} className={styles.personaImage} />
-              <Image src="/images/persona-1.png" alt="Research Image" width={600} height={900} className={styles.personaImage} />
+              <Image src="/images/persona-2.png" alt="Research Image" width={500} height={900} className={styles.personaImage} />
+              <Image src="/images/persona-1.png" alt="Research Image" width={500} height={900} className={styles.personaImage} />
             </div>
           </div>
 
@@ -134,16 +136,16 @@ export default function Civica() {
                 In response, new logo concepts were developed to better align with the brand’s identity while ensuring clear and effective visual communication with the target audience.
               </p>
               <div className={styles.finalLogoContainer}>
-                <Image src="/images/original-logo.png" alt="Original Logo" width={300} height={310} className={styles.logoDraft}/>
+                <Image src="/images/original-logo.png" alt="Original Logo" width={300} height={310} className={styles.logoDraft} />
               </div>
             </div>
             <br /><br />
             <h3>Logo Ideation Begins Again</h3>
             <div className={styles.logoImages}>
               <Image src="/images/logo-draft-1.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
-              <Image src="/images/logo-draft-2.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft}/>
-              <Image src="/images/logo-draft-3.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft}/>
-              <Image src="/images/logo-draft-4.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft}/>
+              <Image src="/images/logo-draft-2.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
+              <Image src="/images/logo-draft-3.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
+              <Image src="/images/logo-draft-4.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
             </div>
             <br /><br />
             <h3>Final Logo</h3>
@@ -154,18 +156,18 @@ export default function Civica() {
             <div className={styles.finalLogoContainer}>
               <Image src="/images/final-logo-1.png" alt=" Civica Logo " width={330} height={320} />
             </div>
-<br/>
+            <br />
             <div className={styles.wireframes}>
-            <h2 className={styles.h2}>Figma Wireframes</h2>
-          <h3>Original Design</h3>
-          <div className={styles.finalLogoContainer}>
-              <Image src="/images/original-wireframes.png" alt=" Civica Logo " width={900} height={350} className={styles.wireframes} />
-            </div>
-           
-            <h3>Final Design</h3>
-            <div className={styles.finalLogoContainer}>
-            <Image src="/images/final-version.png" alt=" Civica Logo " width={900} height={350} className={styles.wireframes} />
-            </div>
+              <h2 className={styles.h2}>Figma Wireframes</h2>
+              <h3>Original Design</h3>
+              <div className={styles.finalLogoContainer}>
+                <Image src="/images/original-wireframes.png" alt=" Civica Logo " width={900} height={350} className={styles.wireframes} />
+              </div>
+
+              <h3>Final Design</h3>
+              <div className={styles.finalLogoContainer}>
+                <Image src="/images/final-version.png" alt=" Civica Logo " width={900} height={350} className={styles.wireframes} />
+              </div>
             </div>
 
           </section>
@@ -174,6 +176,35 @@ export default function Civica() {
             <br /><br />
             <iframe width="900" height="600" src="https://embed.figma.com/proto/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=30-1676&starting-point-node-id=30%3A1600&embed-host=share" allowFullScreen></iframe>
           </section>
+          <section>
+            <div>
+              <h2 className={styles.h2}>Marketing Materials</h2>
+              <div className={styles.blogContainer}>
+                <h3>Civica Blog</h3>
+                <h2 className={styles.link}> <a href="https://www.civicalaw.ca/blog">View Blog</a></h2>
+                <p className={styles.textContainer}>The blog made with Next.js for Civica featured weekly updates on the project's progress and challenges, highlighting achievements and sharing insights into the development process.</p>
+                <Image src="/images/blog.png" alt=" Civica Blog " width={600} height={350} className={styles.wireframes} />
+
+              </div>
+              <br />
+
+              <h3>Social Media</h3>
+              <h2 className={styles.link}> <a href="https://www.instagram.com/civicalaw_/">View Instagram</a></h2>
+              <p className={styles.textContainer}>
+                Our app's Instagram page was used to promote features, engage with our audience, and expand our reach. We shared fun and informative content, posted updates, and built a community around our app.
+              </p>
+              <Image src="/images/instagram.png" alt=" Civica Blog " width={600} height={500} className={styles.wireframes} />
+
+
+              <h3>Brochure Design</h3>
+              <br />
+              <Image src="/images/brochure.png" alt=" Civica Blog " width={650} height={500} className={styles.wireframes} />
+            </div>
+          </section>
+
+
+
+
         </main>
       </div>
       <br /><br />

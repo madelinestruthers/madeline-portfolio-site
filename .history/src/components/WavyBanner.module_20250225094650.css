@@ -1,0 +1,28 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Leaves negative space at the top */
+    background: #1f5a80;
+    overflow: hidden;
+  }
+  
+  .waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, transparent 0%, #ffffff40 50%, transparent 100%);
+    opacity: 0.5;
+    animation: waveMove 3s infinite linear;
+    filter: blur(10px);
+  }
+  
+  @keyframes waveMove {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  

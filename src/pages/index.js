@@ -6,6 +6,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import WavyBanner from "@/components/WavyBanner";
 
 
 export default function Home() {
@@ -48,8 +49,10 @@ export default function Home() {
 
            <article className={styles.scroller}>
             <section className={styles.scrollerBanner}>
+          
               <div className={styles.bannerContainer}>
-                <img src="/images/full-width-banner.jpg" alt="Full Width Banner" className={styles.fullWidthImg} />
+              <WavyBanner/>
+               {/*  <img src="/images/full-width-banner.jpg" alt="Full Width Banner" className={styles.fullWidthImg} />*/}
                 <div className={styles.overlayContent}>
                   <h1 className={styles.name}>Madeline Struthers</h1>
                   <h2 className={styles.jobTitle}>Graphic & UX Designer</h2>
@@ -111,7 +114,7 @@ export default function Home() {
               <p> A memorial painting of Opal the cat was created in Photoshop using a simple brush tool.</p>
               </div>
             </section>
-          
+            
           </article>
           {/*<section>
             <Link href="/projects">
@@ -128,9 +131,9 @@ export default function Home() {
           UP
         </button>
       )} */}
-
-
 <Footer />
+
+
     </>
   );
 }

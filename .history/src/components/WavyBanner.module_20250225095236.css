@@ -1,0 +1,51 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Leaves negative space at the top */
+    background: #1f5a80;
+    overflow: hidden;
+  }
+  
+  /* Container for multiple waves */
+  .waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+  }
+  
+  .waves::before, .waves::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: repeat-x;
+    background-size: 50% 100%;
+    opacity: 0.6;
+    animation: waveMove 8s linear infinite;
+  }
+  
+  /* First layer of waves */
+  .waves::before {
+    background-image: radial-gradient(circle at 50% 100%, transparent 50%, #0d3b66 90%);
+    animation-duration: 10s;
+  }
+  
+  /* Second layer for more depth */
+  .waves::after {
+    background-image: radial-gradient(circle at 50% 100%, transparent 50%, #102a43 90%);
+    animation-duration: 12s;
+    animation-direction: reverse;
+  }
+  
+  @keyframes waveMove {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
