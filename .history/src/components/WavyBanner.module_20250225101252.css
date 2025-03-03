@@ -1,0 +1,45 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Takes up 80% of the viewport height */
+    background: #1f5a80;
+    overflow: hidden;
+  }
+  
+  /* Wrapper for waves */
+  .waveWrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px; /* Full height to allow waves to go higher */
+  }
+  
+  /* Individual wavy lines */
+  .wave {
+    position: absolute;
+    width: 200%;
+    height: 2px; /* Thin lines */
+    background: rgba(255, 255, 255, 0.2); /* Soft transparency */
+    border-radius: 50%;
+    animation: waveMotion 15s linear infinite; /* Slower for a smoother effect */
+  }
+  
+  /* Ultra-smooth, endless wavy motion */
+  @keyframes waveMotion {
+    0% {
+      transform: translateX(0%) translateY(0px);
+    }
+    25% {
+      transform: translateX(-25%) translateY(3px);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-3px);
+    }
+    75% {
+      transform: translateX(-75%) translateY(3px);
+    }
+    100% {
+      transform: translateX(-100%) translateY(0px);
+    }
+  }
+  

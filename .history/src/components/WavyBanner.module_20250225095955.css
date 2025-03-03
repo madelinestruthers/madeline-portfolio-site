@@ -1,0 +1,39 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Leaves negative space at the top */
+    background: #1f5a80;
+    overflow: hidden;
+  }
+  
+  /* Wrapper for multiple waves */
+  .waveWrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  /* General wave styling */
+  .wave {
+    position: absolute;
+    width: 200%;
+    height: 4px; /* Thin lines */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: waveMove 6s linear infinite;
+  }
+  
+  /* Wave animation */
+  @keyframes waveMove {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

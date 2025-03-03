@@ -20,7 +20,7 @@ export default function Sqwell() {
               <p className={styles.bio}>
               Sqwell is an interactive web app designed to promote outdoor exploration through gamified features and user–friendly design. Collaborating with two teammates, I contributed to the design, development, and conceptualization of the platform. Key features include park search and filtering, detailed amenity information, and a personalized profile page to track user activity and engagement.
               </p>
-              <h3 className={styles.link}> <a href="https://sqwell.vercel.app/">sqwell.vercel.app</a></h3>
+              <h2 className={styles.link}> <a href="https://sqwell.vercel.app/">Sqwell Web App</a></h2>
             </div>
             <div className={styles.portrait}>
               <Image
@@ -40,7 +40,7 @@ export default function Sqwell() {
     {/* Text + Image Wrapper */}
     <div className={styles.researchContent}>
         <div>
-        <h3 className={styles.link}> <a href="https://sqwell-styleguide.vercel.app/">Coded Styleguide</a></h3>
+        <h2 className={styles.link}> <a href="https://sqwell-styleguide.vercel.app/">Full Styleguide</a></h2>
             <p className={styles.lawyerBio}>
             The style guide for Sqwell was created to ensure consistency across the app’s design. It includes key elements such as the logo design, color palette, typography, layout guidelines, and iconography. This comprehensive guide helped maintain a cohesive visual identity, making the app more user-friendly and aesthetically appealing.
             </p> <br/>
@@ -119,7 +119,6 @@ export default function Sqwell() {
 
           <iframe width="500" height="650" src="https://embed.figma.com/design/t5tkBHdTWOAe2WK3hbr7mE/MDIA-2106---Sqwell---Set-F?node-id=424-1416&embed-host=share" allowfullscreen></iframe>
           </section>
-          <h3 classname={styles.spacing}> <a href="https://sqwell.vercel.app/">Click Here to Open Web App!</a></h3>
         </main>
       </div>
       <br/><br/>

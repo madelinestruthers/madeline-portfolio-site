@@ -23,6 +23,17 @@ export default function Suki() {
               priority // Preloads the image for better performance
             />
           </div>
+          <br/><br/><br/>
+          <div className={styles.portrait}>
+          <br/><br/><br/>
+            <Image
+              src="/images/poster-mockup.jpg"
+              alt="Poster mockup"
+              width={900} // Adjust width as needed
+              height={600} // Scaled height based on aspect ratio
+              priority // Preloads the image for better performance
+            />
+          </div>
         </main>
       </div>
       <Footer />

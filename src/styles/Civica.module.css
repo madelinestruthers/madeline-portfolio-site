@@ -39,17 +39,26 @@
     text-align: left;
 }
 
-.link{
-    color: #98deff;
-    text-decoration: underline;
-    padding: 10px 10px 10px 0;
-    transition: color 0.3s ease;
+.link {
+    background-color: #FFA500; /* Orange background */
+    color: #003366; /* Dark blue text */
+    padding: 10px 20px; /* Padding for button-like appearance */
+    border: none; /* Remove any default border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    display: inline-block;
+    font-size: 18px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    font-weight: 700;
+    margin-right: 1rem;
 }
 
-.link:hover{
-color: #FFB04F;
-cursor: pointer;
+.link:hover {
+    background-color: #e68900; /* Slightly darker orange on hover */
+    color: #C7EDFF; /* Darker blue text on hover */
 }
+
 
 .subHeading {
     font-size: 24px;
@@ -92,6 +101,12 @@ cursor: pointer;
 .researchImages {
     width: 100%;
     max-width: 400px;
+}
+
+.blogSection{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
 }
 
 .logoImages{
@@ -284,6 +299,11 @@ cursor: pointer;
         justify-content: flex-start;
         width: 100%;
     }
+.textContainer{
+    width: 60%;
+    margin-bottom: 2rem;
+}
+    
 }
 
 @media (min-width: 1024px) {
@@ -299,6 +319,7 @@ cursor: pointer;
         flex-direction: row;
         gap: 2rem;
       }
+
     .colorPalette {
         grid-template-columns: repeat(3, 1fr); /* Expands to 3 columns */
         max-width: 900px;
