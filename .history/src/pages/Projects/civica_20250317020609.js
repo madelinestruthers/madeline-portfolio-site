@@ -197,7 +197,7 @@ export default function Civica() {
 
 
               <h3>Brochure Design</h3>
-            
+              <br />
               <Image src="/images/brochure.png" alt=" Civica Blog " width={650} height={500} className={styles.wireframes} />
             
               <h3>Business Card</h3>

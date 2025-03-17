@@ -186,7 +186,7 @@ export default function Civica() {
                 <Image src="/images/blog.png" alt=" Civica Blog " width={600} height={350} className={styles.wireframes} />
 
               </div>
-              
+              <br />
 
               <h3>Social Media</h3>
               <h2 className={styles.link}> <a href="https://www.instagram.com/civicalaw_/">View Instagram</a></h2>
@@ -197,7 +197,7 @@ export default function Civica() {
 
 
               <h3>Brochure Design</h3>
-            
+              <br />
               <Image src="/images/brochure.png" alt=" Civica Blog " width={650} height={500} className={styles.wireframes} />
             
               <h3>Business Card</h3>

@@ -169,11 +169,11 @@ export default function Civica() {
                 <Image src="/images/final-version.png" alt=" Civica Logo " width={900} height={350} className={styles.wireframes} />
               </div>
             </div>
-  
+            <section>
             <h3>Figma Interactive Prototype</h3>
             
             <iframe width="900" height="600" src="https://embed.figma.com/proto/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=30-1676&starting-point-node-id=30%3A1600&embed-host=share" allowFullScreen></iframe>
-      
+          </section>
           </section>
           
           <section>
@@ -186,7 +186,7 @@ export default function Civica() {
                 <Image src="/images/blog.png" alt=" Civica Blog " width={600} height={350} className={styles.wireframes} />
 
               </div>
-              
+              <br />
 
               <h3>Social Media</h3>
               <h2 className={styles.link}> <a href="https://www.instagram.com/civicalaw_/">View Instagram</a></h2>
@@ -197,7 +197,7 @@ export default function Civica() {
 
 
               <h3>Brochure Design</h3>
-            
+              <br />
               <Image src="/images/brochure.png" alt=" Civica Blog " width={650} height={500} className={styles.wireframes} />
             
               <h3>Business Card</h3>
