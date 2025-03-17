@@ -6,7 +6,7 @@ export default function MotionProject() {
     return (
         <>
             <NavBar />
-         
+            <div className={`${styles.page}`}>
                 <main className={styles.container}>
                     <h1 className={styles.h1Style}>How to Ground Yourself</h1>
                     {/* Video Section */}
@@ -35,7 +35,7 @@ export default function MotionProject() {
     
 
                 </main>
-       
+            </div>
             <Footer />
         </>
     );
