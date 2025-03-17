@@ -8,7 +8,7 @@ export default function MotionProject() {
             <NavBar />
             <div className={`${styles.page}`}>
                 <main className={styles.container}>
-                    <h1 className={styles.h1Style}>Motion Graphics Animation</h1>
+                    <h1 className={styles.h1Style}>Motion Graphics Showcase</h1>
                     {/* Video Section */}
                     <div className={styles.videoContainer}>
                         <iframe
@@ -25,7 +25,7 @@ export default function MotionProject() {
                     </div>
                     {/* Project Details */}
                     <div className={styles.descriptionContainer}>
-                        <h2 className={styles.h2Style}>How to Ground Yourself </h2>
+                        <h2 className={styles.h2Style}>Project Title</h2>
                         <p className={styles.description}>
                             This motion graphics animation showcases dynamic visual storytelling with smooth transitions, vibrant effects, and compelling motion design techniques.
                         </p>
