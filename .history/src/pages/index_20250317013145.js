@@ -68,7 +68,7 @@ export default function Home() {
               </Link>
               <div className={styles.projectText}>
                 <h2 className={styles.projectHeader}>Sqwell Web App</h2>
-                <p>an interactive web app designed to promote outdoor exploration through gamified features and user–friendly design.</p>
+                <p>Interactive Web App for nature lovers</p>
                
               </div>
             </section>

@@ -1,4 +1,4 @@
-
+"use client";
 
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
@@ -68,8 +68,8 @@ export default function Home() {
               </Link>
               <div className={styles.projectText}>
                 <h2 className={styles.projectHeader}>Sqwell Web App</h2>
-                <p>an interactive web app designed to promote outdoor exploration through gamified features and user–friendly design.</p>
-               
+                <p>Interactive Web App for nature lovers</p>
+                <h4 className={styles.link}> <a href="https://sqwell.vercel.app/">sqwell.vercel.app</a></h4>
               </div>
             </section>
 
@@ -80,7 +80,7 @@ export default function Home() {
               <div className={styles.projectText}>
                 <h2 className={styles.projectHeader}>Civica – Legal Aid Mobile App</h2>
                 <p>A legal support app designed to empower underprivileged women by providing accessible tools and guidance for navigating legal challenges.</p>
-              
+                <h4 className={styles.link}> <a href="https://www.civicalaw.ca/">civicalaw.ca</a></h4>
               </div>
             </section>
 
@@ -124,7 +124,7 @@ export default function Home() {
 
           <div className={styles.buttonContainer}>
             <Link href="/projects">
-              <button className={styles.link}>See All Projects</button>
+              <button className={styles.backButton}>See All Projects</button>
             </Link>
           </div>
 
