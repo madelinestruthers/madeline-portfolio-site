@@ -9,17 +9,30 @@
   z-index: 111;
 }
 
-.navbar-logo {
+.navbarLogo {
   display: flex;
   align-items: center;
-
+  stroke-dasharray: 500; /* Total length of the path */
+  stroke-dashoffset: 500; /* Initially hidden */
+  animation: draw 2s linear forwards;
 }
 
-.navbar-logo a {
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+svg:hover .navbarLogo {
+  stroke: #ff6600; /* Changes color on hover */
+}
+
+.navbarLogo a {
   text-decoration: none;
 }
 
-.navbar-logo img {
+.navbarLogo img {
   width: 12%;
   height: auto;
 }
@@ -93,7 +106,7 @@
     /* Hide hamburger menu */
   }
 
-  .navbar-logo img {
+  .navbarLogo img {
     max-width: 100%;
     height: auto;
   }
@@ -128,7 +141,7 @@
     padding: 20px 100px;
   }
 
-  .navbar-logo img {
+  .navbarLogo img {
     max-width: 90%;
     height: auto;
   }

@@ -11,7 +11,7 @@ const NavBar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles["navbar-logo"]}>
+      <div className={styles.navbarLogo}>
         <a href="/">
           <Image
             src="/images/ms-logo.svg"

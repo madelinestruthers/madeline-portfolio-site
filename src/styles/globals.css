@@ -35,60 +35,109 @@ a {
   text-decoration: none;
 }
 
+/* 📌 Ensure Page Structure */
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-/* 📌 Mobile-First: Single Column Layout */
+/* 📌 Title & Filter Layout */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/* Align title left */
+.projects-header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 100px;
+  color: #98deff;   
+}
+
+/* Align filter right */
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 100px;
+}
+
+/* 📌 Apply required #category-filter styling */
+#category-filter {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* 📌 Grid Layout for Projects */
 .projects-container {
   display: grid;
-  grid-template-columns: 1fr; /* Single column */
+  grid-template-columns: 1fr;
   gap: 20px;
   padding-top: 2rem;
   justify-items: center;
+  flex-grow: 1; /* Ensures content takes up available space */
 }
 
-/* 📌 Project Card Styling */
-.project-card {
-  padding: 15px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease-in-out;
-  cursor: pointer;
-  width: 100%;
+/* 📌 Handle No Projects */
+.no-projects {
   text-align: center;
+  font-size: 1.2rem;
+  color: #999;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
+/* 📌 Stick Footer to Bottom */
+footer {
+  margin-top: auto;
 }
+
 
 /* 🔥 Tablet View (600px and up) */
 @media (min-width: 600px) {
   .projects-container {
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* 🖥️ Standard Desktop View (900px and up) */
+/* 🖥️ Desktop View (900px and up) */
 @media (min-width: 900px) {
   .projects-container {
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-columns: repeat(3, 1fr);
     margin: 1rem 100px 6rem 100px;
     gap: 6rem;
-  }
-
-  .project-card {
-    max-width: 400px;
   }
 }
 
 /* 🖥️ Large Desktop View (1400px and up) */
 @media (min-width: 1600px) {
   .projects-container {
-    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-template-columns: repeat(4, 1fr);
     margin: 2rem 200px 6rem 200px;
     gap: 8rem;
   }
+}
 
-  .project-card {
-    width: 700px; /* Larger cards */
+/* 📱 Mobile View: Stack title & filter */
+@media (max-width: 899px) {
+  .projects-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .projects-header h1 {
+    margin-left: 0;
+  }
+
+  .filter-container {
+    margin-right: 0;
   }
 }

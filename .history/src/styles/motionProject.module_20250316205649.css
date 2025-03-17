@@ -1,0 +1,86 @@
+/* Page Wrapper */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Content */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Video Styling */
+.videoContainer {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+.video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title & Description */
+.descriptionContainer {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.h1Style {
+    font-size: 2.5rem;
+    color: #98deff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: ;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #cbedfd;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/* Assets Section */
+.assetsContainer {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.h2Style {
+    font-size: 2rem;
+    color: #98deff;
+    margin-bottom: 15px;
+}
+
+.assets {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.assetImage {
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .assets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assetImage {
+        width: 90%;
+    }
+}

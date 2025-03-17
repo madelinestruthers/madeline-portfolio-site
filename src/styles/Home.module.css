@@ -74,7 +74,7 @@
   }
 }
 
-/* snap scroll */
+/* snap scroll 
 
 .scroller {
   height: 100vh;
@@ -82,7 +82,7 @@
   scroll-snap-type: y mandatory;
   overflow-x: hidden;
 
-}
+}*/
 
 .scroller section img {
   width: auto;
