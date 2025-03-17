@@ -147,7 +147,7 @@ export default function Civica() {
               <Image src="/images/logo-draft-3.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
               <Image src="/images/logo-draft-4.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
             </div>
-           
+            <br /><br />
             <h3>Final Logo</h3>
 
             <p className={styles.finalLogoBio}>
@@ -156,7 +156,7 @@ export default function Civica() {
             <div className={styles.finalLogoContainer}>
               <Image src="/images/final-logo-1.png" alt=" Civica Logo " width={330} height={320} />
             </div>
-            <br />
+          
             <div className={styles.wireframes}>
               <h2 className={styles.h2}>Figma Wireframes</h2>
               <h3>Original Design</h3>

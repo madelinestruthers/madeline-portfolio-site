@@ -147,7 +147,7 @@ export default function Civica() {
               <Image src="/images/logo-draft-3.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
               <Image src="/images/logo-draft-4.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
             </div>
-           
+            <br /><br />
             <h3>Final Logo</h3>
 
             <p className={styles.finalLogoBio}>
@@ -173,7 +173,7 @@ export default function Civica() {
           </section>
           <section>
             <h3>Figma Interactive Prototype</h3>
-            
+            <br /><br />
             <iframe width="900" height="600" src="https://embed.figma.com/proto/0NxjFtht1BziwLShVjdx5B/Civica-2.0?node-id=30-1676&starting-point-node-id=30%3A1600&embed-host=share" allowFullScreen></iframe>
           </section>
           <section>
@@ -202,8 +202,8 @@ export default function Civica() {
             
               <h3>Business Card</h3>
               <br />
-              <Image src="/images/card-front.png" alt=" Civica Blog " width={250} height={400} className={styles.wireframes} />
               <Image src="/images/business-card.png" alt=" Civica Blog " width={250} height={400} className={styles.wireframes} />
+              <Image src="/images/card-front.png" alt=" Civica Blog " width={250} height={400} className={styles.wireframes} />
             </div>
 
           </section>

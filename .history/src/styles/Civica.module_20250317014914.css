@@ -254,7 +254,6 @@
   }
   .wireframes{
     border-radius: 10px;
-    margin-right: 20px;
   }
 
 /* Responsive Styling */
@@ -401,6 +400,9 @@
         width: 70%; /* Ensure proper text width */
         font-size: 18px;
         margin-top: 0;
+        margin-bottom: 4rem;
+    }
+    .surveyImage{
         margin-bottom: 4rem;
     }
    

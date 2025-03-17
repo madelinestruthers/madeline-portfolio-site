@@ -147,7 +147,7 @@ export default function Civica() {
               <Image src="/images/logo-draft-3.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
               <Image src="/images/logo-draft-4.png" alt=" Logo Draft" width={250} height={250} className={styles.logoDraft} />
             </div>
-           
+            <br /><br />
             <h3>Final Logo</h3>
 
             <p className={styles.finalLogoBio}>

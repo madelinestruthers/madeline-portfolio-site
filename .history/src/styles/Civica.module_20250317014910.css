@@ -254,7 +254,6 @@
   }
   .wireframes{
     border-radius: 10px;
-    margin-right: 20px;
   }
 
 /* Responsive Styling */
@@ -403,6 +402,9 @@
         margin-top: 0;
         margin-bottom: 4rem;
     }
+    .surveyImage{
+        margin-bottom: 4rem;
+    }
    
     .designImage{
         margin-top: 3rem;
@@ -439,7 +441,7 @@
     }
     .researchImages{
         width: 55vw;
-        height: 45vh;
+        height: 40vh;
     }
 
 }

@@ -100,7 +100,7 @@
 /* Image Styling */
 .researchImages {
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .blogSection{
@@ -254,7 +254,6 @@
   }
   .wireframes{
     border-radius: 10px;
-    margin-right: 20px;
   }
 
 /* Responsive Styling */
@@ -403,6 +402,9 @@
         margin-top: 0;
         margin-bottom: 4rem;
     }
+    .surveyImage{
+        margin-bottom: 4rem;
+    }
    
     .designImage{
         margin-top: 3rem;
@@ -438,8 +440,8 @@
         margin-bottom: 3rem;
     }
     .researchImages{
-        width: 55vw;
-        height: 45vh;
+        width: 50vw;
+        height: 30vh;
     }
 
 }
