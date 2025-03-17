@@ -8,7 +8,7 @@ export default function MotionProject() {
             <NavBar />
             <div className={`${styles.page}`}>
                 <main className={styles.container}>
-                    <h1 className={styles.h1Style}>How to Ground Yourself</h1>
+                    <h1 className={styles.h1Style}>Motion Graphics Animation</h1>
                     {/* Video Section */}
                     <div className={styles.videoContainer}>
                         <iframe
@@ -24,15 +24,22 @@ export default function MotionProject() {
                     </div>
                     {/* Project Details */}
                     <div className={styles.descriptionContainer}>
-                        <h2 className={styles.h2Style}>Motion Graphics Project: Grounding Yourself Tutorial </h2>
+                        <h2 className={styles.h2Style}>How to Ground Yourself </h2>
                         <p className={styles.description}>
-                            This motion graphics piece is a visual exploration of mindfulness and grounding techniques, designed to create a sense of calm and presence. Using Adobe After Effects and Illustrator, I crafted a seamless animation with fluid transitions, soft color palettes, and soothing motion design.
-
-                            The composition is carefully timed to calming music, enhancing the immersive experience.
+                            This motion graphics animation showcases dynamic visual storytelling with smooth transitions, vibrant effects, and compelling motion design techniques.
                         </p>
                     </div>
 
-    
+                    {/* Assets Section */}
+                    <div className={styles.assetsContainer}>
+                        <h2 className={styles.h2Style}>Project Assets</h2>
+                        <div className={styles.assets}>
+                            <img src="/images/girl.png" alt="Asset 1" className={styles.assetImage} />
+                            <img src="/images/tree.png" alt="Asset 2" className={styles.assetImage} />
+                            <img src="/images/lungs.png" alt="Asset 2" className={styles.assetImage} />
+                            <img src="/images/stressed.png" alt="Asset 2" className={styles.assetImage} />
+                        </div>
+                    </div>
 
                 </main>
             </div>

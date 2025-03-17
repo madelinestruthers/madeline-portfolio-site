@@ -8,7 +8,7 @@ export default function MotionProject() {
             <NavBar />
             <div className={`${styles.page}`}>
                 <main className={styles.container}>
-                    <h1 className={styles.h1Style}>How to Ground Yourself</h1>
+                    <h1 className={styles.h1Style}>Motion Graphics Animation</h1>
                     {/* Video Section */}
                     <div className={styles.videoContainer}>
                         <iframe

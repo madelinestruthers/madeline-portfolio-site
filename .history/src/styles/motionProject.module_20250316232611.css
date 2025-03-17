@@ -43,7 +43,7 @@
 .description {
     font-size: 1.2rem;
     color: #cbedfd;
-    max-width: 800px;
+    max-width: 700px;
     line-height: 1.6;
 }
 
@@ -59,8 +59,26 @@
     margin-bottom: 15px;
 }
 
+.assets {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.assetImage {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /* Responsive */
 @media (max-width: 768px) {
+    .assets {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .assetImage {
+        width: 90%;
+    }
 }
