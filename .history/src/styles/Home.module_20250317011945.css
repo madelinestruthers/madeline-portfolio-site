@@ -151,7 +151,7 @@
 
 /* Hover Effect */
 .posterImage:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* Text Container */
@@ -212,7 +212,7 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     text-align: left;
-    gap: 4rem;
+    gap: 3rem;
     height: 80vh;
     width: 100vw;
   }
@@ -243,12 +243,12 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     text-align: left;
-    gap: 6rem;
+    gap: 4rem;
     height: 90vh;
     width: 100vw;
   }
   .posterImage{
-    height: 90vh;
+    height: 80vh;
     width: 90vw;
   }
 
