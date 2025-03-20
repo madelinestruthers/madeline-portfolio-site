@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import SineWaveBanner from "@/components/SineWaveBanner";
 
 
+
 export default function Home() {
 
   const [showScroll, setShowScroll] = useState(false);

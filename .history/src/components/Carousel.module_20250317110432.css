@@ -1,0 +1,59 @@
+/* 📌 Carousel Container */
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px; /* Adjust width */
+  height: 450px; /* Adjust height */
+  overflow: hidden;
+}
+
+/* 📌 Image Wrapper (For smooth transition) */
+.imageWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* 📌 Image Styling */
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 📌 Navigation Buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #071926;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  
+}
+
+.prev:hover,
+.next:hover {
+  background: #98deff;
+}
+
+/* 📌 Button Positions */
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
