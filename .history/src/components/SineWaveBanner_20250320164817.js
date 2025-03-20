@@ -133,7 +133,7 @@ const SineWaveBanner = () => {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "620px", overflow: "hidden", backgroundColor: "#1F5A80" }}> {/* Increased height */}
+    <div style={{ position: "relative", width: "100%", height: "650px", overflow: "hidden", backgroundColor: "#1F5A80" }}> {/* Increased height */}
       <canvas ref={canvasRef} style={{ width: "100%", height: "100%" }} data-wave-count="16" data-amplitude="50"></canvas>
     </div>
   );

@@ -15,7 +15,7 @@ const SineWaveBanner = () => {
         this.settings = {
           waveCount: parseInt(data.waveCount) || options.waveCount || 16,
           amplitude: parseInt(data.amplitude) || options.amplitude || 55,
-          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.01,
+          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.008,
           waveSpacing: parseInt(data.waveSpacing) || options.waveSpacing || 29.5,
           baseColor: data.baseColor
             ? data.baseColor.split(",").map(Number)
@@ -133,7 +133,7 @@ const SineWaveBanner = () => {
   }, []);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "620px", overflow: "hidden", backgroundColor: "#1F5A80" }}> {/* Increased height */}
+    <div style={{ position: "relative", width: "100%", height: "600px", overflow: "hidden", backgroundColor: "#1F5A80" }}> {/* Increased height */}
       <canvas ref={canvasRef} style={{ width: "100%", height: "100%" }} data-wave-count="16" data-amplitude="50"></canvas>
     </div>
   );
