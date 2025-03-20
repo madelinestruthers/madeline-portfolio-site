@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import SineWaveBanner from "@/components/SineWaveBanner";
+import WavyBanner from "@/components/WavyBanner";
 
 
 export default function Home() {
@@ -49,9 +50,10 @@ export default function Home() {
 
 
           <section className={styles.scrollerBanner}>
-
+            
+          
             <div className={styles.bannerContainer}>
-            <SineWaveBanner />
+              <SineWaveBanner />
               {/*  <img src="/images/full-width-banner.jpg" alt="Full Width Banner" className={styles.fullWidthImg} />*/}
               <div className={styles.overlayContent}>
                 <h1 className={styles.name}>Madeline Struthers</h1>
@@ -69,7 +71,7 @@ export default function Home() {
               <div className={styles.projectText}>
                 <h2 className={styles.projectHeader}>Sqwell Web App</h2>
                 <p>an interactive web app designed to promote outdoor exploration through gamified features and user–friendly design.</p>
-               
+
               </div>
             </section>
 
@@ -80,7 +82,7 @@ export default function Home() {
               <div className={styles.projectText}>
                 <h2 className={styles.projectHeader}>Civica – Legal Aid Mobile App</h2>
                 <p>A legal support app designed to empower underprivileged women by providing accessible tools and guidance for navigating legal challenges.</p>
-              
+
               </div>
             </section>
 

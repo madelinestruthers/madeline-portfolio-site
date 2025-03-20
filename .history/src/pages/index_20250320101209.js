@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import SineWaveBanner from "@/components/SineWaveBanner";
+import WavyBanner from "@/components/WavyBanner";
 
 
 export default function Home() {
@@ -49,8 +50,10 @@ export default function Home() {
 
 
           <section className={styles.scrollerBanner}>
-
+            <div className={styles.bannerBackground}>
+ <WavyBanner/></div>
             <div className={styles.bannerContainer}>
+             
             <SineWaveBanner />
               {/*  <img src="/images/full-width-banner.jpg" alt="Full Width Banner" className={styles.fullWidthImg} />*/}
               <div className={styles.overlayContent}>

@@ -1,0 +1,168 @@
+/* 📌 PAGE WRAPPER */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 40px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* ✅ Centers content on large screens */
+    overflow-x: hidden;
+}
+
+/* 📌 MAIN CONTAINER */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 📌 TOP SECTION (Title + Main Image) */
+.topSection {
+    display: flex;
+    flex-direction: column;
+    /* Mobile: Stacked */
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* 📌 TEXT CONTAINER (h1 + p) */
+.textContainer {
+    max-width: 600px;
+}
+
+/* 📌 HEADING */
+.h1Style {
+    font-size: 30px;
+    color: #98deff;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+/* 📌 PARAGRAPH */
+.bio {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbedfd;
+}
+
+/* 📌 MAIN IMAGE */
+.mainImage {
+    max-width: 1000px;
+    width: 600px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* 📌 IMAGE GRID SECTION */
+.imageGrid {
+    display: flex;
+    flex-direction: column;
+    /* Mobile: Stacked */
+    gap: 0.8rem; /* ✅ Reduced gap for closer images */
+    width: 100%;
+    align-items: center;
+}
+
+/* 📌 EACH ROW (MOBILE: STACKED) */
+.imageRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 📌 INDIVIDUAL IMAGE STYLING */
+.flatImage,
+.canImage {
+    border-radius: 10px;
+    padding: 0;
+}
+
+/* Reduce spacing */
+.flatImage {
+    margin-right: 2rem; /* ✅ Reduced spacing */
+}
+
+.canImage {
+    margin-left: 1rem; /* ✅ Reduced spacing */
+}
+
+/* 📌 DESKTOP VIEW (TABLET) */
+@media (min-width: 768px) {
+    .topSection {
+        flex-direction: row; /* ✅ Arrange text & image side by side */
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .textContainer {
+        flex: 1;
+    }
+
+    .mainImage {
+        max-width: 900px; /* ✅ Adjusted */
+        padding: 20px;
+        margin-right: 1rem;
+    }
+
+    .h1Style {
+        text-align: left;
+        width: 80%;
+        font-size: 50px;
+    }
+
+    /* 🔥 IMAGE GRID: STACKS IN COLUMNS */
+    .imageGrid {
+        flex-direction: column;
+    }
+
+    /* 📌 EACH ROW: IMAGE NEXT TO CAN */
+    .imageRow {
+        flex-direction: row;
+        justify-content: center; /* ✅ Keeps images centered */
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem; /* ✅ Closer images */
+    }
+
+    /* Make images slightly bigger */
+    .flatImage,
+    .canImage {
+        width: 40%;
+    }
+}
+
+/* 🖥️ LARGE DESKTOP VIEW */
+@media (min-width: 1200px) {
+    .topSection {
+        justify-content: space-between;
+        max-width: 1000px;
+    }
+
+    .mainImage {
+        max-width: 1000px;
+        width: 700px; /* ✅ Bigger main image */
+    }
+
+    .h1Style {
+        font-size: 60px; /* ✅ Bigger title */
+    }
+
+    /* 🔥 IMAGE ROWS: SLIGHTLY LARGER ON BIG SCREENS */
+    .imageRow {
+        gap: 0.3rem; /* ✅ Keeps images closer together */
+    }
+
+    /* Increase image sizes */
+    .flatImage,
+    .canImage {
+        width: 45%; /* ✅ Bigger images on large screens */
+    }
+}
