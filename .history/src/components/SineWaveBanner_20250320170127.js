@@ -5,9 +5,8 @@ import { useEffect, useRef } from "react";
 const SineWaveBanner = () => {
   const canvasRef = useRef(null);
   let mouseX = 0;
-  let targetAmplitude = 55;
+  let targetAmplitude = 55; // Base amplitude
   let currentAmplitude = 55;
-  let mouseInfluence = 0;
 
   useEffect(() => {
     class WavesCanvas {
@@ -17,10 +16,10 @@ const SineWaveBanner = () => {
 
         const data = this.canvas.dataset;
         this.settings = {
-          waveCount: parseInt(data.waveCount) || options.waveCount || 14,
+          waveCount: parseInt(data.waveCount) || options.waveCount || 16,
           amplitude: parseInt(data.amplitude) || options.amplitude || 55,
-          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.0075,
-          waveSpacing: parseInt(data.waveSpacing) || options.waveSpacing || 33, // slightly increased for better spacing,
+          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.01,
+          waveSpacing: parseInt(data.waveSpacing) || options.waveSpacing || 29.5,
           baseColor: data.baseColor
             ? data.baseColor.split(",").map(Number)
             : options.baseColor || [0, 160, 255],
@@ -59,13 +58,12 @@ const SineWaveBanner = () => {
           const totalHeight =
             (this.settings.waveCount - 1) * this.settings.waveSpacing;
           const centerOffset = (this.canvas.height - totalHeight) / 2;
-          this.yOffset = centerOffset + this.index * this.settings.waveSpacing + 80;
+          this.yOffset = centerOffset + this.index * this.settings.waveSpacing + 40;
         }
 
         draw(ctx) {
           ctx.beginPath();
-          let opacity = 1 - (this.index / this.settings.waveCount) * 0.3; // Slightly lower opacity at the top
-          ctx.strokeStyle = `rgba(${this.settings.baseColor[0]}, ${this.settings.baseColor[1]}, ${this.settings.baseColor[2]}, ${opacity})`;
+          ctx.strokeStyle = this.color;
           ctx.lineWidth = this.settings.lineWidth;
 
           let firstX = 0;
@@ -83,13 +81,11 @@ const SineWaveBanner = () => {
             const rightOffsetPx =
               (this.settings.rightOffset / 100) * this.canvas.height;
             const offset = leftOffsetPx * (1 - t) + rightOffsetPx * t;
-            const influence = Math.sin((x - mouseX) * 0.01) * mouseInfluence;
             const y =
               this.yOffset +
               offset +
-              Math.sin(x * 0.005 + this.phase) * currentAmplitude +
-              Math.cos(x * 0.002 + this.phase) * currentAmplitude * 0.5 +
-              influence;
+              Math.sin(x * 0.005 + this.phase + mouseX * 0.002) * currentAmplitude +
+              Math.cos(x * 0.002 + this.phase + mouseX * 0.001) * currentAmplitude * 0.5;
             ctx.lineTo(x, y);
           }
 
@@ -108,14 +104,11 @@ const SineWaveBanner = () => {
       init() {
         window.addEventListener("resize", () => this.resizeCanvas());
         window.addEventListener("mousemove", (e) => {
-          let smoothedMouseX = mouseX * 0.9 + e.clientX * 0.1; // Smooth movement
-          mouseX = smoothedMouseX;
-          targetAmplitude = 65;
-          mouseInfluence = 8;
+          mouseX = (e.clientX / window.innerWidth - 0.5) * 50; // Make waves move dynamically with mouse
+          targetAmplitude = 65; // Increase amplitude on hover
         });
         window.addEventListener("mouseleave", () => {
-          targetAmplitude = 55;
-          mouseInfluence = 0;
+          targetAmplitude = 55; // Reset when mouse leaves
         });
         this.resizeCanvas();
 
@@ -128,18 +121,10 @@ const SineWaveBanner = () => {
 
       animate() {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        let angleX = mouseX / this.canvas.width;
-        let startY = this.canvas.height * (0.3 + 0.2 * angleX);
-        let endY = this.canvas.height * (0.7 - 0.2 * angleX);
-        let gradient = this.ctx.createLinearGradient(mouseX - 150, startY, mouseX + 150, endY);
-        gradient.addColorStop(0, 'rgba(31, 90, 128, 0.98)'); // almost identical to background // subtle edge start // slightly lighter edge start // softened edge start
-        gradient.addColorStop(0.5, 'rgba(31, 90, 128, 0.92)'); // barely lighter center tint // lighter middle tint // lowered opacity for subtler hover color // Darker blue at hover area
-        gradient.addColorStop(1, 'rgba(31, 90, 128, 0.98)');   // softened edge end
-        this.ctx.fillStyle = gradient;
+        this.ctx.fillStyle = "#1F5A80"; // Background color
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
-        currentAmplitude += (targetAmplitude - currentAmplitude) * 0.1;
-        mouseInfluence *= 0.99; // fade out interaction gradually
+        currentAmplitude += (targetAmplitude - currentAmplitude) * 0.1; // Smooth amplitude transition
 
         this.waves.forEach((wave) => {
           wave.updateOffset();
@@ -161,7 +146,6 @@ const SineWaveBanner = () => {
       });
       window.removeEventListener("mouseleave", () => {
         targetAmplitude = 55;
-        mouseInfluence = 0;
       });
     };
   }, []);

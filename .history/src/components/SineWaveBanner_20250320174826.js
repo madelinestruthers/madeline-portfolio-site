@@ -19,7 +19,7 @@ const SineWaveBanner = () => {
         this.settings = {
           waveCount: parseInt(data.waveCount) || options.waveCount || 14,
           amplitude: parseInt(data.amplitude) || options.amplitude || 55,
-          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.0075,
+          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.008,
           waveSpacing: parseInt(data.waveSpacing) || options.waveSpacing || 33, // slightly increased for better spacing,
           baseColor: data.baseColor
             ? data.baseColor.split(",").map(Number)
@@ -59,7 +59,7 @@ const SineWaveBanner = () => {
           const totalHeight =
             (this.settings.waveCount - 1) * this.settings.waveSpacing;
           const centerOffset = (this.canvas.height - totalHeight) / 2;
-          this.yOffset = centerOffset + this.index * this.settings.waveSpacing + 80;
+          this.yOffset = centerOffset + this.index * this.settings.waveSpacing + 70;
         }
 
         draw(ctx) {

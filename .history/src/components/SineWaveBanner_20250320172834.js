@@ -17,14 +17,14 @@ const SineWaveBanner = () => {
 
         const data = this.canvas.dataset;
         this.settings = {
-          waveCount: parseInt(data.waveCount) || options.waveCount || 14,
+          waveCount: parseInt(data.waveCount) || options.waveCount || 16,
           amplitude: parseInt(data.amplitude) || options.amplitude || 55,
-          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.0075,
-          waveSpacing: parseInt(data.waveSpacing) || options.waveSpacing || 33, // slightly increased for better spacing,
+          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.01,
+          waveSpacing: parseInt(data.waveSpacing) || options.waveSpacing || 29.5,
           baseColor: data.baseColor
             ? data.baseColor.split(",").map(Number)
             : options.baseColor || [0, 160, 255],
-          lineWidth: parseInt(data.lineWidth) || options.lineWidth || 1.8,
+          lineWidth: parseInt(data.lineWidth) || options.lineWidth || 1.6,
           direction: data.direction || options.direction || "left",
           leftOffset: data.leftOffset || options.leftOffset || 0,
           rightOffset: data.rightOffset || options.rightOffset || 0,
@@ -59,13 +59,12 @@ const SineWaveBanner = () => {
           const totalHeight =
             (this.settings.waveCount - 1) * this.settings.waveSpacing;
           const centerOffset = (this.canvas.height - totalHeight) / 2;
-          this.yOffset = centerOffset + this.index * this.settings.waveSpacing + 80;
+          this.yOffset = centerOffset + this.index * this.settings.waveSpacing + 40;
         }
 
         draw(ctx) {
           ctx.beginPath();
-          let opacity = 1 - (this.index / this.settings.waveCount) * 0.3; // Slightly lower opacity at the top
-          ctx.strokeStyle = `rgba(${this.settings.baseColor[0]}, ${this.settings.baseColor[1]}, ${this.settings.baseColor[2]}, ${opacity})`;
+          ctx.strokeStyle = this.color;
           ctx.lineWidth = this.settings.lineWidth;
 
           let firstX = 0;
@@ -128,13 +127,10 @@ const SineWaveBanner = () => {
 
       animate() {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        let angleX = mouseX / this.canvas.width;
-        let startY = this.canvas.height * (0.3 + 0.2 * angleX);
-        let endY = this.canvas.height * (0.7 - 0.2 * angleX);
-        let gradient = this.ctx.createLinearGradient(mouseX - 150, startY, mouseX + 150, endY);
-        gradient.addColorStop(0, 'rgba(31, 90, 128, 0.98)'); // almost identical to background // subtle edge start // slightly lighter edge start // softened edge start
-        gradient.addColorStop(0.5, 'rgba(31, 90, 128, 0.92)'); // barely lighter center tint // lighter middle tint // lowered opacity for subtler hover color // Darker blue at hover area
-        gradient.addColorStop(1, 'rgba(31, 90, 128, 0.98)');   // softened edge end
+        let gradient = this.ctx.createLinearGradient(mouseX - 200, 0, mouseX + 200, this.canvas.height);
+        gradient.addColorStop(0, '#1F5A80');
+        gradient.addColorStop(0.5, 'rgba(28, 76, 108, 0.7)'); // Darker blue at hover area
+        gradient.addColorStop(1, '#1F5A80');
         this.ctx.fillStyle = gradient;
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
