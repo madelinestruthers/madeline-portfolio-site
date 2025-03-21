@@ -17,10 +17,10 @@ const SineWaveBanner = () => {
 
         const data = this.canvas.dataset;
         this.settings = {
-          waveCount: parseInt(data.waveCount) || options.waveCount || 14,
+          waveCount: parseInt(data.waveCount) || options.waveCount || 16,
           amplitude: parseInt(data.amplitude) || options.amplitude || 55,
-          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.0075,
-          waveSpacing: parseInt(data.waveSpacing) || options.waveSpacing || 33, // slightly increased for better spacing,
+          baseSpeed: parseFloat(data.baseSpeed) || options.baseSpeed || 0.009,
+          waveSpacing: parseInt(data.waveSpacing) || options.waveSpacing || 35, // slightly increased for better spacing,
           baseColor: data.baseColor
             ? data.baseColor.split(",").map(Number)
             : options.baseColor || [0, 160, 255],
@@ -59,7 +59,7 @@ const SineWaveBanner = () => {
           const totalHeight =
             (this.settings.waveCount - 1) * this.settings.waveSpacing;
           const centerOffset = (this.canvas.height - totalHeight) / 2;
-          this.yOffset = centerOffset + this.index * this.settings.waveSpacing + 80;
+          this.yOffset = centerOffset + this.index * this.settings.waveSpacing + 50;
         }
 
         draw(ctx) {
@@ -134,7 +134,7 @@ const SineWaveBanner = () => {
         let gradient = this.ctx.createLinearGradient(mouseX - 150, startY, mouseX + 150, endY);
         gradient.addColorStop(0, 'rgba(31, 90, 128, 0.98)'); // almost identical to background // subtle edge start // slightly lighter edge start // softened edge start
         gradient.addColorStop(0.5, 'rgba(31, 90, 128, 0.92)'); // barely lighter center tint // lighter middle tint // lowered opacity for subtler hover color // Darker blue at hover area
-        gradient.addColorStop(1, 'rgba(31, 90, 128, 0.98)');   // softened edge end
+        gradient.addColorStop(1, 'rgba(31, 90, 128, 0.98)');  end // softened edge end
         this.ctx.fillStyle = gradient;
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
