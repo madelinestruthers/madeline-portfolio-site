@@ -3,16 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  
   position: sticky;
   z-index: 111;
 }
 
-.navbar-logo img{
+.navbar-logo img {
   display: flex;
   align-items: center;
-  width: 45px;
-  height: 100px;
+  width: 80px;
+  background-color: antiquewhite;
 }
 
 
@@ -145,7 +145,7 @@
   }
 
   .navbar-logo img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
   }
 
