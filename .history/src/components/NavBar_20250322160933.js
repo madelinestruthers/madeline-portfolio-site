@@ -1,3 +1,4 @@
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -15,8 +16,7 @@ const NavBar = () => {
             <Image
               src="/images/ms-logo.svg"
               alt="Logo"
-              width={80}
-              height={22}
+              className={styles.logoImage}
               priority
             />
           </div>

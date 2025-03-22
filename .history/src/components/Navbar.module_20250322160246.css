@@ -3,18 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 2rem;
+  margin: 0.2rem 0;
   position: sticky;
   z-index: 111;
 }
 
-.navbar-logo img{
+.navbar-logo {
   display: flex;
   align-items: center;
-  width: 45px;
-  height: 100px;
 }
-
 
 .navbar-logo a {
   text-decoration: none;
@@ -23,7 +21,7 @@
 .logo-wrapper {
   display: inline-block;
   transform: scale(1);
-  transition: transform 0.4s ease-in-out 0.1s, filter 0.4s ease-in-out 0.1s;
+  transition: transform 0.4s ease-in-out 0.2s, filter 0.4s ease-in-out 0.1s;
   will-change: transform, filter;
 }
 
@@ -111,8 +109,8 @@
     display: none;
   }
 
-  .navbar-logo{
-    width: 40px;
+  .navbar-logo img {
+    max-width: 100%;
     height: auto;
   }
 
@@ -145,7 +143,7 @@
   }
 
   .navbar-logo img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
   }
 
