@@ -187,10 +187,10 @@
   color: #003366; /* Dark blue text */
   padding: 20px 30px; /* Padding for button-like appearance */
   border: none; /* Remove any default border */
-  border-radius: 30px; /* Rounded corners */
+  border-radius: 5px; /* Rounded corners */
   text-align: center;
   display: inline-block;
-  font-size: 22px; /* Adjust font size */
+  font-size: 20px; /* Adjust font size */
   cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
   font-weight: 700;

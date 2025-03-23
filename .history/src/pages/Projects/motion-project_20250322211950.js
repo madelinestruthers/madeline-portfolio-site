@@ -37,8 +37,8 @@ export default function MotionProject() {
                 <h2 className={styles.h1Style}>Assets</h2>
                 <div className={styles.assetContainer}>
                     <div className={styles.assets}>
-                        <Image src="/images/Asset1.svg" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
                         <Image src="/images/Asset2.svg" alt="Asset 2" width={150} height={150} className={styles.assetImage} />
+                        <Image src="/images/Asset1.svg" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
                         <Image src="/images/Asset3.svg" alt="Asset 3" width={150} height={150} className={styles.assetImage} />
                         <Image src="/images/Asset4.svg" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
                         <Image src="/images/Asset5.svg" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
