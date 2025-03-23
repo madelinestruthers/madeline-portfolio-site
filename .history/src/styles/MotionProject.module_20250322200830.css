@@ -36,7 +36,7 @@
 
 .video {
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -64,11 +64,6 @@
     font-size: 1rem;
     color: #cbedfd;
     line-height: 1.6;
-}
-
-.bold{
-    font-weight: 700;
-    color: #ffc072;
 }
 
 /* Assets Section */
@@ -146,7 +141,6 @@
         flex: 1;
         max-width: 40%;
         text-align: left;
-        margin-right: 20px;
     }
 
     .videoContainer {
@@ -154,6 +148,7 @@
         max-width: 60%;
         /* Make it take half the width */
         order: 2;
+        
     }
 
     .h1Style {

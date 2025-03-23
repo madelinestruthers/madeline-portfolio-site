@@ -15,6 +15,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'><path fill='%23ffb04f' stroke='%23fa8a00' stroke-width='2' d='M2,2 L30,16 L20,18 L24,30 Z'/></svg>") 0 0, default;
 }
 
 

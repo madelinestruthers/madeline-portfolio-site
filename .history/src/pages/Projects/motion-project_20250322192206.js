@@ -17,7 +17,7 @@ export default function MotionProject() {
                     {/* Project Details (Left Side on Desktop) */}
                     <div className={styles.descriptionContainer}>
                         <p className={styles.description}>
-                            Made for kids, this motion graphics piece explores mindfulness and grounding through fluid animation, soft colors, and soothing music. Created with <strong className={styles.bold}>After Effects</strong> and <strong className={styles.bold}>Illustrator</strong>, it delivers a calm, immersive experience.
+                            Made for kids, this motion graphics piece explores mindfulness and grounding through fluid animation, soft colors, and soothing music. Created with After Effects and Illustrator, it delivers a calm, immersive experience.
                         </p>
                     </div>
 
@@ -34,15 +34,12 @@ export default function MotionProject() {
                     </div>
 
                 </div>
-                <h2 className={styles.h1Style}>Illustrator Assets</h2>
+                <h2 className={styles.h1Style}>Assets</h2>
                 <div className={styles.assetContainer}>
                     <div className={styles.assets}>
-                        <Image src="/images/Asset2.svg" alt="Asset 2" width={150} height={150} className={styles.assetImage} />
-                        <Image src="/images/Asset1.svg" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
-                        <Image src="/images/Asset3.svg" alt="Asset 3" width={150} height={150} className={styles.assetImage} />
-                        <Image src="/images/Asset4.svg" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
-                        <Image src="/images/Asset5.svg" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
-                        <Image src="/images/Asset6.svg" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
+                        <Image src="/assets/Asset1.svg" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
+                        <Image src="/assets/Asset2.svg" alt="Asset 2" width={150} height={150} className={styles.assetImage} />
+                        <Image src="/assets/Asset3.svg" alt="Asset 3" width={150} height={150} className={styles.assetImage} />
                     </div>
                 </div>
             </main>
