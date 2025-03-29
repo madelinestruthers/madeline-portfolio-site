@@ -22,6 +22,7 @@
 .bannerContainer {
   position: relative;
   width: 100vw;
+
 }
 
 .fullWidthImg {
@@ -43,14 +44,14 @@
 }
 
 .name {
-  font-size: clamp(3.5rem, 6vw, 3.5rem); 
+  font-size: clamp(2.4rem, 6vw, 3.5rem); /* fluid scale */
   line-height: 1.1;
   width: 100%;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .jobTitle {
-  font-size: clamp(2rem, 5vw, 2.2rem);
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
   line-height: 1.2;
   width: 100%;
   text-align: left;
@@ -59,11 +60,13 @@
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
+
 /* Fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(10px);
+    /* Optional: subtle upward movement */
   }
 
   to {
@@ -72,17 +75,53 @@
   }
 }
 
+/* snap scroll
+
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+
+} */
+
 .scroller section img {
   width: auto;
   max-height: 82vh;
 }
 
-/* Responsive Banner Height */
+/* Back to Top Button 
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #ff8c00;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.scrollTop:hover {
+  background: #ffb04f;
+  transform: scale(1.1);
+}
+
+*/
 .scrollerBanner {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: clamp(60vh, 78vh, 90vh);
+  height: 60vh; /* reduce from 90vh */
   overflow: hidden;
 }
 
@@ -93,11 +132,15 @@
   text-align: center;
   width: 100%;
   padding: 20px;
+  /*
+  scroll-snap-align: start;*/
+
 }
 
 .scrollerProjects:last-of-type {
   margin-bottom: 4rem;
 }
+
 
 /* Project Images */
 .posterImage {
@@ -109,8 +152,8 @@
 
 /* Hover Effect */
 .posterImage:hover {
-  transform: scale(1.05); 
-  transition: transform 0.3s ease-in-out; 
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
 /* Text Container */
@@ -120,6 +163,7 @@
 }
 
 /* Headings */
+
 .projectHeader {
   font-size: 24px;
   margin-bottom: 10px;
@@ -131,34 +175,34 @@
   color: #cbedfd;
 }
 
-.scroller section h2 {
+.scroller section h2{
   color: #cbedfd;
 }
 
 .link {
-  background-color: #FFA500; 
-  color: #003366; 
-  padding: 20px 30px; 
-  border: none; 
-  border-radius: 30px; 
+  background-color: #FFA500; /* Orange background */
+  color: #003366; /* Dark blue text */
+  padding: 20px 30px; /* Padding for button-like appearance */
+  border: none; /* Remove any default border */
+  border-radius: 30px; /* Rounded corners */
   text-align: center;
   display: inline-block;
-  font-size: 22px; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  font-size: 22px; /* Adjust font size */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
   font-weight: 700;
   margin-bottom: 6rem;
 }
 
 .link:hover {
-  color: #C7EDFF; 
+  color: #C7EDFF; /* Darker blue text on hover */
 }
 
-.projectText {
+.projectText{
   display: none;
 }
 
-/* Responsive - Tablet / Small Desktop */
+/* Responsive - Desktop: Two Column Layout */
 @media (min-width: 768px) {
   .name {
     font-size: 90px;
@@ -168,12 +212,11 @@
     font-size: 50px;
   }
 
-  .projectText {
+  .projectText{
     margin-left: 2rem;
     width: 70%;
     display: block;
   }
-
   .scrollerProjects {
     flex-direction: row;
     justify-content: center;
@@ -188,8 +231,6 @@
     position: absolute;
     top: 68%;
     left: 150px;
-    transform: translateY(-50%);
-    width: auto;
   }
 
   .name,
@@ -197,16 +238,16 @@
     width: 100%;
     line-height: 0.2;
   }
+
+
 }
 
-/* Responsive - Desktop */
-@media (min-width: 1024px) {
-  .projectText {
+@media (min-width: 1024px){
+  .projectText{
     margin-left: 2rem;
     width: 80%;
     display: block;
   }
-
   .scrollerProjects {
     flex-direction: row;
     justify-content: center;
@@ -216,9 +257,9 @@
     height: 90vh;
     width: 100vw;
   }
-
-  .posterImage {
+  .posterImage{
     height: 90vh;
     width: 90vw;
   }
+
 }

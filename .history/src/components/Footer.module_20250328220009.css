@@ -1,32 +1,38 @@
 .footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 40px 100px 30px;
-  background-color: hsl(210, 82%, 15%);
+  align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  padding: 50px 100px 30px 100px;
+  background-color: hsl(210, 82%, 15%);
 }
 
 .logo {
   display: flex;
   align-items: center;
+  flex: 1;
+}
+
+.logoImage {
+  width: auto;
 }
 
 .links {
   display: flex;
-  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .link {
   display: flex;
   align-items: center;
+  text-decoration: none;
   font-size: 16px;
   color: #C7EDFF;
-  text-decoration: none;
+  transition: color 0.3s ease, border-color 0.3s ease;
   border-bottom: 4px solid transparent;
-  transition: color 0.3s ease;
 }
 
 .link:hover {
@@ -34,9 +40,11 @@
 }
 
 .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
   font-size: 16px;
-  color: white;
-  margin: 0 auto;
+  color: #ffffff;
 }
 
 .icon {
@@ -44,24 +52,20 @@
   font-size: 18px;
 }
 
+/* Responsive tweak */
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
-    text-align: center;
     padding: 40px 20px;
   }
 
-  .logo,
   .links {
     justify-content: center;
+    margin-top: 20px;
   }
 
-  .links {
-    flex-wrap: wrap;
-  }
-
-  .copyright {
-    order: 2;
-    margin-top: 1rem;
+  .logo {
+    justify-content: center;
+    margin-bottom: 10px;
   }
 }
