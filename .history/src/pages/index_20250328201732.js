@@ -104,6 +104,15 @@ export default function Home() {
               </div>
             </section>
 
+            <section className={styles.scrollerProjects}>
+              <Link href="/projects/suki">
+                <img src="/images/suki.png" alt="Suki Project" className={styles.posterImage} />
+              </Link>
+              <div className={styles.projectText}>
+                <h2 className={styles.projectHeader}>Suki Waterhouse Poster</h2>
+                <p>Poster made in PhotoShop for the musical artist Suki</p>
+              </div>
+            </section>
 
           </article>
 

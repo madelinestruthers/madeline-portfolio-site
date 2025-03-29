@@ -194,7 +194,7 @@
   cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
   font-weight: 700;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .link:hover {
