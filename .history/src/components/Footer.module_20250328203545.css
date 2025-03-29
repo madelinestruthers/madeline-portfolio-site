@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 100px; /* Adjust the side padding as needed */
+    padding: 20px 100px; /* Adjust the side padding as needed */
     background-color: hsl(210, 82%, 15%);
     
   }

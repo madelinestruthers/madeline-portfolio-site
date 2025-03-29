@@ -1,5 +1,5 @@
 
-import WaveCanvas from "@/components/WaveCanvas";
+
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/NavBar";
@@ -104,8 +104,12 @@ export default function Home() {
               </div>
             </section>
 
-
           </article>
+          {/*<section>
+            <Link href="/projects">
+            <h3>Check out the rest of my projects!</h3>
+            </Link>
+  </section>*/}
 
           <div className={styles.buttonContainer}>
             <Link href="/projects">
@@ -123,7 +127,6 @@ export default function Home() {
           UP
         </button>
       )} */}
-      <WaveCanvas/>
       <Footer />
 
 
