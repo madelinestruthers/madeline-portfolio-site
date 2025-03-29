@@ -18,10 +18,9 @@ const Footer = () => {
           />
         </a>
       </div>
-      <p className={styles.copyright}>Madeline Struthers © 2025</p>
+
       {/* Right Section: Links */}
       <div className={styles.links}>
-        
         <a
           href="https://linkedin.com/in/madelinestruthers" 
           target="_blank"
