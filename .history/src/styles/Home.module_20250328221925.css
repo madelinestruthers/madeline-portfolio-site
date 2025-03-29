@@ -22,6 +22,7 @@
 .bannerContainer {
   position: relative;
   width: 100vw;
+
 }
 
 .fullWidthImg {
@@ -43,14 +44,14 @@
 }
 
 .name {
-  font-size: clamp(3.5rem, 6vw, 3.5rem); 
+  font-size: clamp(2.4rem, 6vw, 3.5rem); 
   line-height: 1.1;
   width: 100%;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .jobTitle {
-  font-size: clamp(2rem, 5vw, 2.2rem);
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
   line-height: 1.2;
   width: 100%;
   text-align: left;
@@ -58,6 +59,7 @@
   animation: fadeIn 2s ease-in-out forwards;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Fade-in animation */
 @keyframes fadeIn {
@@ -72,17 +74,18 @@
   }
 }
 
+
 .scroller section img {
   width: auto;
   max-height: 82vh;
 }
 
-/* Responsive Banner Height */
+
 .scrollerBanner {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: clamp(60vh, 78vh, 90vh);
+  height: 60vh; 
   overflow: hidden;
 }
 
@@ -93,11 +96,14 @@
   text-align: center;
   width: 100%;
   padding: 20px;
+ 
+
 }
 
 .scrollerProjects:last-of-type {
   margin-bottom: 4rem;
 }
+
 
 /* Project Images */
 .posterImage {
@@ -120,6 +126,7 @@
 }
 
 /* Headings */
+
 .projectHeader {
   font-size: 24px;
   margin-bottom: 10px;
@@ -131,7 +138,7 @@
   color: #cbedfd;
 }
 
-.scroller section h2 {
+.scroller section h2{
   color: #cbedfd;
 }
 
@@ -154,11 +161,11 @@
   color: #C7EDFF; 
 }
 
-.projectText {
+.projectText{
   display: none;
 }
 
-/* Responsive - Tablet / Small Desktop */
+/* Responsive - Desktop: Two Column Layout */
 @media (min-width: 768px) {
   .name {
     font-size: 90px;
@@ -168,12 +175,11 @@
     font-size: 50px;
   }
 
-  .projectText {
+  .projectText{
     margin-left: 2rem;
     width: 70%;
     display: block;
   }
-
   .scrollerProjects {
     flex-direction: row;
     justify-content: center;
@@ -188,8 +194,6 @@
     position: absolute;
     top: 68%;
     left: 150px;
-    transform: translateY(-50%);
-    width: auto;
   }
 
   .name,
@@ -197,16 +201,16 @@
     width: 100%;
     line-height: 0.2;
   }
+
+
 }
 
-/* Responsive - Desktop */
-@media (min-width: 1024px) {
-  .projectText {
+@media (min-width: 1024px){
+  .projectText{
     margin-left: 2rem;
     width: 80%;
     display: block;
   }
-
   .scrollerProjects {
     flex-direction: row;
     justify-content: center;
@@ -216,9 +220,9 @@
     height: 90vh;
     width: 100vw;
   }
-
-  .posterImage {
+  .posterImage{
     height: 90vh;
     width: 90vw;
   }
+
 }
