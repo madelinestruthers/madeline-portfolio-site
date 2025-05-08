@@ -59,28 +59,11 @@
     max-width: 1200px;
 }
 
-.imageRow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-.imageGrid {
-    display: flex;
-    flex-direction: column;
-    /* Mobile: Stacked */
-    gap: 2rem;
-    width: 100%;
-    align-items: center;
-}
-
 
 .weltelDescription {
     font-size: 18px;
     color: #cbedfd;
     line-height: 1.8;
-    margin-bottom: 4rem;
 }
 .description {
     font-size: 1rem;
@@ -92,8 +75,6 @@
     font-weight: 700;
     color: #ffc072;
 }
-
-
 
 /* Assets Section */
 .assetsContainer {
@@ -116,12 +97,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: 20px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #ffc072;
     border-radius: 8px;
-    padding: 50px;
-    border: solid 10px #ffc072;
+    
   }
   .assetImage {
     height: auto;
