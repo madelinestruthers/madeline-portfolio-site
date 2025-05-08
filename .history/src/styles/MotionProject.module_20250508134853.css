@@ -178,8 +178,7 @@
 
     .weltelDescription{
         width: 90%;
-        margin-left: 1rem;
-        text-align: center;
+        text-align: left;
 
     }
     .videoDescriptionWrapper {
