@@ -1,0 +1,225 @@
+/* Page Wrapper */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Banner Section */
+.bannerContainer {
+  position: relative;
+  width: 100vw;
+
+}
+
+.fullWidthImg {
+  width: 100%;
+  display: block;
+}
+
+/* Overlay Content */
+.overlayContent {
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  width: 84%;
+  transform: translateY(-50%);
+  color: #C7EDFF;
+  line-height: 1.1;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.name {
+  font-size: clamp(3.5rem, 6vw, 3.5rem); 
+  line-height: 1.1;
+  width: 100%;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.jobTitle {
+  font-size: clamp(2rem, 5vw, 2.2rem);
+  line-height: 1.2;
+  width: 100%;
+  text-align: left;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroller section img {
+  width: auto;
+  max-height: 82vh;
+}
+
+/* Responsive Banner Height */
+.scrollerBanner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: clamp(60vh, 78vh, 90vh);
+  overflow: hidden;
+}
+
+.scrollerProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.scrollerProjects:last-of-type {
+  margin-bottom: 4rem;
+}
+
+/* Project Images */
+.posterImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.posterImage:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+/* Text Container */
+.projectText {
+  max-width: 500px;
+  padding: 10px 0;
+}
+
+/* Headings */
+.projectHeader {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Descriptions */
+.scroller section p {
+  font-size: 16px;
+  color: #cbedfd;
+}
+
+.scroller section h2 {
+  color: #cbedfd;
+}
+
+.link {
+  background-color: #FFA500; 
+  color: #003366; 
+  padding: 20px 30px; 
+  border: none; 
+  border-radius: 30px; 
+  text-align: center;
+  display: inline-block;
+  font-size: 22px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.link:hover {
+  color: #C7EDFF; 
+}
+
+.projectText {
+  display: none;
+}
+
+/* Responsive - Tablet / Small Desktop */
+@media (min-width: 768px) {
+  .name {
+    font-size: 90px;
+  }
+
+  .jobTitle {
+    font-size: 50px;
+  }
+
+  .projectText {
+    margin-left: 2rem;
+    width: 70%;
+    display: block;
+  }
+
+  .scrollerProjects {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 4rem;
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .overlayContent {
+    position: absolute;
+    top: 68%;
+    left: 150px;
+    transform: translateY(-50%);
+    width: auto;
+  }
+
+  .name,
+  .jobTitle {
+    width: 100%;
+    line-height: 0.2;
+  }
+}
+
+/* Responsive - Desktop */
+@media (min-width: 1024px) {
+  .projectText {
+    margin-left: 2rem;
+    width: 80%;
+    display: block;
+  }
+
+  .scrollerProjects {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 6rem;
+    height: 90vh;
+    width: 100vw;
+  }
+
+  .posterImage {
+    height: 90vh;
+    width: 90vw;
+  }
+}

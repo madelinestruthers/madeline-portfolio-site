@@ -2,7 +2,6 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import styles from "@/styles/About.module.css";
 import Image from "next/image";
-import WaveCanvas from "@/components/WaveCanvas";
 
 export default function MechanicalObject() {
   return (
@@ -28,7 +27,6 @@ export default function MechanicalObject() {
            
         </main>
       </div>
-      <WaveCanvas/>
       <Footer />
     </>
   );
