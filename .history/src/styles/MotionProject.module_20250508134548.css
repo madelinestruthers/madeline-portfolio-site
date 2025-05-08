@@ -177,10 +177,10 @@
     }
 
     .weltelDescription{
-        width: 90%;
-        margin-left: 1rem;
-        text-align: center;
-
+        width: 85%;
+        text-align: left;
+     
+        margin-right: 2rem;
     }
     .videoDescriptionWrapper {
         flex-direction: row;
@@ -205,7 +205,6 @@
 
     .h1Style {
         font-size: 60px;
-        text-align: center;
     }
 
     .description {
