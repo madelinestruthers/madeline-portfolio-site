@@ -22,7 +22,7 @@ export default function MotionProject() {
 
         <h2 className={styles.h2Style}>Engagement Insights</h2>
         <p className={styles.weltelDescription}>
-        My social media posts led to measurable boosts in reach and engagement. Screenshots from WelTel’s analytics reveal significant increases across key metrics following campaign launches—profile visits jumped from 2 to 54, and audience reach surged from 72 to 1,056. These results highlight the impact of consistent, strategic visual content in driving meaningful interactions and expanding WelTel’s online presence.       
+          My social media posts led to measurable boosts in reach and engagement. Screenshots from WelTel’s analytics show significant increases in profile visits, post interactions, and audience reach following campaign launches—demonstrating the value of consistent, strategic visual content.
         </p>
         <h2 className={styles.h2Style}>Insights Comparison</h2>
         <div className={styles.insightsGrid}>
