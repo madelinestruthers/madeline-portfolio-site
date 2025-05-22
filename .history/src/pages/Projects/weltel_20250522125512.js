@@ -20,9 +20,10 @@ export default function WelTel() {
           </p>
         </div>
 
+
 <section>
   <h2 className={styles.h1Style}>Graphics</h2>
-<br/>
+
   <div className={styles.imageGridTwoCol}>
     <Image
       src="/images/PSW-cover-updated.png"
@@ -62,13 +63,27 @@ export default function WelTel() {
   </div>
 </section>
 
-<h2 className={styles.h1Style}>Engagement Insights</h2>
+
+        <h2 className={styles.h1Style}>Assets</h2>
+        <div className={styles.assetContainer}>
+          <div className={styles.weltelAssets}>
+        
+            <Image src="/images/head_asset.png" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
+            <Image src="/images/hand_asset.png" alt="Asset 2" width={150} height={150} className={styles.assetImage} />
+            <Image src="/images/woman_doctor_asset.png" alt="Asset 3" width={150} height={150} className={styles.assetImage} />
+            <Image src="/images/arrow_asset.png" alt="Asset 4" width={150} height={150} className={styles.assetImage} />
+            <Image src="/images/cross_asset.svg" alt="Asset 5" width={150} height={150} className={styles.assetImage} />
+            <Image src="/images/nurse.png" alt="Asset 5" width={150} height={150} className={styles.assetImage} />
+          </div>
+        </div>
+
+
+        <h2 className={styles.h2Style}>Engagement Insights</h2>
         <p className={styles.weltelDescription}>
         My social media posts led to measurable boosts in reach and engagement. Screenshots from WelTel’s analytics reveal significant increases across key metrics following campaign launches—profile visits jumped from 2 to 54, and audience reach surged from 72 to 1,056. These results highlight the impact of consistent, strategic visual content in driving meaningful interactions and expanding WelTel’s online presence.       
-       Scroll down to see a data comparison!
         </p>
 
-<h2 className={styles.h2Style}>Data Comparison</h2>
+        <h2 className={styles.h2Style}>Data Comparison</h2>
         <div className={styles.insightsGrid}>
   <div className={styles.imageWithCaption}>
     <p className={styles.caption}>New Post – Profile Visits Spike</p>
@@ -88,19 +103,6 @@ export default function WelTel() {
   </div>
 </div>
 
-
-        <h2 className={styles.h1Style}>Assets</h2>
-        <div className={styles.assetContainer}>
-          <div className={styles.weltelAssets}>
-        
-            <Image src="/images/head_asset.png" alt="Asset 1" width={150} height={150} className={styles.assetImage} />
-            <Image src="/images/hand_asset.png" alt="Asset 2" width={150} height={150} className={styles.assetImage} />
-            <Image src="/images/woman_doctor_asset.png" alt="Asset 3" width={150} height={150} className={styles.assetImage} />
-            <Image src="/images/arrow_asset.png" alt="Asset 4" width={150} height={150} className={styles.assetImage} />
-            <Image src="/images/cross_asset.svg" alt="Asset 5" width={150} height={150} className={styles.assetImage} />
-            <Image src="/images/nurse.png" alt="Asset 5" width={150} height={150} className={styles.assetImage} />
-          </div>
-        </div>
       </main>
 
       <Footer />

@@ -62,7 +62,7 @@ export default function WelTel() {
   </div>
 </section>
 
-<h2 className={styles.h1Style}>Engagement Insights</h2>
+<h2 className={styles.h2Style}>Engagement Insights</h2>
         <p className={styles.weltelDescription}>
         My social media posts led to measurable boosts in reach and engagement. Screenshots from WelTel’s analytics reveal significant increases across key metrics following campaign launches—profile visits jumped from 2 to 54, and audience reach surged from 72 to 1,056. These results highlight the impact of consistent, strategic visual content in driving meaningful interactions and expanding WelTel’s online presence.       
        Scroll down to see a data comparison!
