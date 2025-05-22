@@ -74,19 +74,16 @@
   
   .weltelAssets {
     display: flex;
-    flex-wrap: wrap;              /* 🔑 Allows items to wrap to next line */
-    justify-content: center;      /* Centers wrapped rows */
-    align-items: center;
-    gap: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
     width: 100%;
-    max-width: 1000px;
     background-color: #ffffff;
     border-radius: 8px;
     padding: 50px;
-    border: solid 5px #ffc072;
-    box-sizing: border-box;
+    border: solid 10px #ffc072;
   }
-
+  
   .assetImage {
     height: auto;
   }
