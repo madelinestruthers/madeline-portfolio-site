@@ -20,55 +20,12 @@ export default function WelTel() {
           </p>
         </div>
 
-<section>
-  <h2 className={styles.h1Style}>Graphics</h2>
-<br/>
-  <div className={styles.imageGridTwoCol}>
-    <Image
-      src="/images/PSW-cover-updated.png"
-      alt="Paramedic Services Day graphic"
-      width={540}
-      height={540}
-      className={styles.flatImage}
-    />
-    <Image
-      src="/images/International-nurses-day-cover.png"
-      alt="International nurses Day graphic"
-      width={540}
-      height={540}
-      className={styles.flatImage}
-    />
-    <Image
-      src="/images/IPD-portfolio.png"
-      alt="International Physicians Day graphic"
-      width={540}
-      height={540}
-      className={styles.flatImage}
-    />
-    <Image
-      src="/images/MHW-portfolio.png"
-      alt="Mental Health Week graphic"
-      width={540}
-      height={540}
-      className={styles.flatImage}
-    />
-    <Image
-      src="/images/RCD-portfolio.png"
-      alt="Red Cross Day graphic"
-      width={540}
-      height={540}
-      className={styles.flatImage}
-    />
-  </div>
-</section>
-
-<h2 className={styles.h1Style}>Engagement Insights</h2>
+        <h2 className={styles.h2Style}>Engagement Insights</h2>
         <p className={styles.weltelDescription}>
         My social media posts led to measurable boosts in reach and engagement. Screenshots from WelTel’s analytics reveal significant increases across key metrics following campaign launches—profile visits jumped from 2 to 54, and audience reach surged from 72 to 1,056. These results highlight the impact of consistent, strategic visual content in driving meaningful interactions and expanding WelTel’s online presence.       
-       Scroll down to see a data comparison!
         </p>
-
-<h2 className={styles.h2Style}>Data Comparison</h2>
+        
+        <h2 className={styles.h2Style}>Insights Comparison</h2>
         <div className={styles.insightsGrid}>
   <div className={styles.imageWithCaption}>
     <p className={styles.caption}>New Post – Profile Visits Spike</p>
@@ -88,6 +45,61 @@ export default function WelTel() {
   </div>
 </div>
 
+
+        <section className={styles.imageGrid}>
+          <h2 className={styles.h1Style}>Graphics</h2>
+
+          <div className={styles.imageRow}>
+            <Image
+              src="/images/PSW-cover-updated.png"
+              alt="Paramedic Services Day graphic"
+              width={540}
+              height={540}
+              className={styles.flatImage}
+            />
+          </div>
+
+          <div className={styles.imageRow}>
+            <Image
+              src="/images/International-nurses-day-cover.png"
+              alt="International nurses Day graphic"
+              width={540}
+              height={540}
+              className={styles.flatImage}
+            />
+          </div>
+
+
+          <div className={styles.imageRow}>
+            <Image
+              src="/images/IPD-portfolio.png"
+              alt="International Physicians Day graphic"
+              width={540}
+              height={540}
+              className={styles.flatImage}
+            />
+          </div>
+
+          <div className={styles.imageRow}>
+            <Image
+              src="/images/MHW-portfolio.png"
+              alt="Mental Health Week Graphic with brain covered in squiggles"
+              width={540}
+              height={540}
+              className={styles.flatImage}
+            />
+          </div>
+
+          <div className={styles.imageRow}>
+            <Image
+              src="/images/RCD-portfolio.png"
+              alt="Red cross day graphic with the 3 logos that represents the red cross internationally"
+              width={540}
+              height={540}
+              className={styles.flatImage}
+            />
+          </div>
+        </section>
 
         <h2 className={styles.h1Style}>Assets</h2>
         <div className={styles.assetContainer}>

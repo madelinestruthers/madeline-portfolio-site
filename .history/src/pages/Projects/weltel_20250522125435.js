@@ -20,9 +20,35 @@ export default function WelTel() {
           </p>
         </div>
 
+        <h2 className={styles.h2Style}>Engagement Insights</h2>
+        <p className={styles.weltelDescription}>
+        My social media posts led to measurable boosts in reach and engagement. Screenshots from WelTel’s analytics reveal significant increases across key metrics following campaign launches—profile visits jumped from 2 to 54, and audience reach surged from 72 to 1,056. These results highlight the impact of consistent, strategic visual content in driving meaningful interactions and expanding WelTel’s online presence.       
+        </p>
+
+        <h2 className={styles.h2Style}>Data Comparison</h2>
+        <div className={styles.insightsGrid}>
+  <div className={styles.imageWithCaption}>
+    <p className={styles.caption}>New Post – Profile Visits Spike</p>
+    <img src="/images/new-post-1.jpg" alt="New post insight 1" />
+  </div>
+  <div className={styles.imageWithCaption}>
+    <p className={styles.caption}>New Post – Reach & Interactions Increase</p>
+    <img src="/images/new-post-2.jpg" alt="New post insight 2" />
+  </div>
+  <div className={styles.imageWithCaption}>
+    <p className={styles.caption}>Previous Post – Baseline Metrics</p>
+    <img src="/images/old-post-1.jpg" alt="Old post insight 1" />
+  </div>
+  <div className={styles.imageWithCaption}>
+    <p className={styles.caption}>Previous Post – Engagement Comparison</p>
+    <img src="/images/old-post-2.jpg" alt="Old post insight 2" />
+  </div>
+</div>
+
+
 <section>
   <h2 className={styles.h1Style}>Graphics</h2>
-<br/>
+
   <div className={styles.imageGridTwoCol}>
     <Image
       src="/images/PSW-cover-updated.png"
@@ -61,32 +87,6 @@ export default function WelTel() {
     />
   </div>
 </section>
-
-<h2 className={styles.h1Style}>Engagement Insights</h2>
-        <p className={styles.weltelDescription}>
-        My social media posts led to measurable boosts in reach and engagement. Screenshots from WelTel’s analytics reveal significant increases across key metrics following campaign launches—profile visits jumped from 2 to 54, and audience reach surged from 72 to 1,056. These results highlight the impact of consistent, strategic visual content in driving meaningful interactions and expanding WelTel’s online presence.       
-       Scroll down to see a data comparison!
-        </p>
-
-<h2 className={styles.h2Style}>Data Comparison</h2>
-        <div className={styles.insightsGrid}>
-  <div className={styles.imageWithCaption}>
-    <p className={styles.caption}>New Post – Profile Visits Spike</p>
-    <img src="/images/new-post-1.jpg" alt="New post insight 1" />
-  </div>
-  <div className={styles.imageWithCaption}>
-    <p className={styles.caption}>New Post – Reach & Interactions Increase</p>
-    <img src="/images/new-post-2.jpg" alt="New post insight 2" />
-  </div>
-  <div className={styles.imageWithCaption}>
-    <p className={styles.caption}>Previous Post – Baseline Metrics</p>
-    <img src="/images/old-post-1.jpg" alt="Old post insight 1" />
-  </div>
-  <div className={styles.imageWithCaption}>
-    <p className={styles.caption}>Previous Post – Engagement Comparison</p>
-    <img src="/images/old-post-2.jpg" alt="Old post insight 2" />
-  </div>
-</div>
 
 
         <h2 className={styles.h1Style}>Assets</h2>

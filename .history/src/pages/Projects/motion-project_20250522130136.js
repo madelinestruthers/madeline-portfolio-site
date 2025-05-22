@@ -9,7 +9,7 @@ export default function MotionProject() {
             <NavBar />
 
             <main className={styles.container}>
-                <h1 className={styles.h1Style}>How to Ground Yourself – <br/> Motion Graphics</h1>
+                <h1 className={styles.h1Style}>How to Ground Yourself <br/> Animated Video</h1>
 
                 {/* Video & Description Row on Desktop (Video on Right) */}
                 <div className={styles.videoDescriptionWrapper}>
