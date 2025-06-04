@@ -20,10 +20,10 @@ export default function WelTel() {
           </p>
 
           <Image
-            src="/images/heart.svg"
+            src="/images/Weltel-logo-white.svg"
             alt="WelTel logo"
-            width={400}
-            height={400}
+            width={100}
+            height={100}
             className={styles.logoImage}
           />
         </div>
@@ -74,7 +74,6 @@ export default function WelTel() {
             <Image src="/images/arrow_asset.png" alt="Arrow Asset" width={150} height={150} className={styles.assetImage} />
             <Image src="/images/cross_asset.svg" alt="Cross Asset" width={150} height={150} className={styles.assetImage} />
             <Image src="/images/nurse.png" alt="Nurse Asset" width={150} height={150} className={styles.assetImage} />
-            <Image src="/images/heart.svg" alt="Nurse Asset" width={150} height={150} className={styles.assetImage} />
           </div>
         </div>
       </main>

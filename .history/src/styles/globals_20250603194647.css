@@ -121,9 +121,8 @@ a {
 /* 🔥 Tablet View (600px and up) */
 @media (min-width: 600px) {
   .projects-container {
-    grid-template-columns: repeat(2, minmax(400px, 1fr));  /* Wider tablet cards */
+    grid-template-columns: repeat(2, 1fr);
     padding: 2rem 2rem;
-    gap: 3rem;
   }
 }
 
@@ -131,9 +130,8 @@ a {
 @media (min-width: 900px) {
   .projects-container {
     grid-template-columns: repeat(2, minmax(500px, 1fr));  /* 👈 Wider cards */
-    margin: 2rem 200px 6rem 200px;  /* Adjust margin as needed */
-    column-gap: 0; /* space between cards (horizontal) */
-    row-gap: 6rem; 
+    margin: 2rem 150px 6rem 150px;  /* Adjust margin as needed */
+    gap: 2rem;
   }
 }
 

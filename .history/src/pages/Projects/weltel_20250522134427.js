@@ -12,20 +12,19 @@ export default function WelTel() {
         <h1 className={styles.h1Style}>Social Media Design</h1>
 
         <div className={styles.topSection}>
+          <Image
+            src="/images/Weltel-logo-white.svg"
+            alt="WelTel logo"
+            width={100}
+            height={100}
+            className={styles.logoImage}
+          />
 
           <p className={styles.weltelDescription}>
             During my internship at WelTel Health, I developed a cohesive series of social media graphics to enhance the company’s online presence and connect with its audience. I created a consistent visual system—including templates, reusable assets, a defined color palette, and typography guidelines—based on the team’s request for a simple, animated style aligned with their brand.
             <br /><br />
             Using <strong className={styles.bold}>Illustrator, Photoshop, and Figma,</strong> I organized and shared progress to ensure easy collaboration and transparency. I also contributed to communications campaigns such as “Meet the Team” and customer testimonial posts, which highlighted WelTel’s mission and community impact. Scroll down to see how I boosted WelTel’s reach and engagement through strategic, impactful design!
           </p>
-
-          <Image
-            src="/images/heart.svg"
-            alt="WelTel logo"
-            width={400}
-            height={400}
-            className={styles.logoImage}
-          />
         </div>
 
         <section>
@@ -74,7 +73,6 @@ export default function WelTel() {
             <Image src="/images/arrow_asset.png" alt="Arrow Asset" width={150} height={150} className={styles.assetImage} />
             <Image src="/images/cross_asset.svg" alt="Cross Asset" width={150} height={150} className={styles.assetImage} />
             <Image src="/images/nurse.png" alt="Nurse Asset" width={150} height={150} className={styles.assetImage} />
-            <Image src="/images/heart.svg" alt="Nurse Asset" width={150} height={150} className={styles.assetImage} />
           </div>
         </div>
       </main>

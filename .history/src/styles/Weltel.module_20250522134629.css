@@ -150,7 +150,8 @@
   
   .logoImage {
     flex-shrink: 0;
-    max-width: 150px;
+    border-radius: 8px;
+    max-width: 120px;
     height: auto;
   }
   

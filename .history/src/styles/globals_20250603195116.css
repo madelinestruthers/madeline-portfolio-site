@@ -133,7 +133,7 @@ a {
     grid-template-columns: repeat(2, minmax(500px, 1fr));  /* 👈 Wider cards */
     margin: 2rem 200px 6rem 200px;  /* Adjust margin as needed */
     column-gap: 0; /* space between cards (horizontal) */
-    row-gap: 6rem; 
+    row-gap: 4rem; 
   }
 }
 
