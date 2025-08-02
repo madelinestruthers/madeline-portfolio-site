@@ -54,7 +54,7 @@ export default function Home() {
               {/*  <img src="/images/full-width-banner.jpg" alt="Full Width Banner" className={styles.fullWidthImg} />*/}
               <div className={styles.overlayContent}>
                 <h1 className={styles.name}>Madeline Struthers</h1>
-                <h2 className={styles.jobTitle}>Graphic & UX Designer</h2>
+                <h2 className={styles.jobTitle}>Digital Marketer & Graphic Designer</h2>
               </div>
 
             </div>

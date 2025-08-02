@@ -12,7 +12,7 @@ export default function Projects() {
     { title: "Sqwell Web App", image: "/images/sqwell-home-page.jpg", link: "/projects/sqwell", category: "UX/UI Design" },
     { title: "Civica Mobile App", image: "/images/project-card-civica.jpg", link: "/projects/civica", category: "UX/UI Design" },
     { title: "Social Media Graphics", image: "/images/project-card-social-media.jpg", link: "/projects/weltel", category: "Social Media Marketing" },
-    { title: "Viper Energy Can Design Mockup", image: "/images/project-card-viper.jpg", link: "/projects/viper-energy", category: "Graphic Design" },
+    { title: "Viper Energy Can Design Mockup", image: "/images/can-mockup-project.jpg", link: "/projects/viper-energy", category: "Graphic Design" },
     { title: "Suki Waterhouse Poster", image: "/images/project-card-suki.jpg", link: "/projects/suki", category: "Graphic Design" },
     { title: "How to Ground Yourself Motion Graphics Video", image: "/images/project-card-video.jpg", link: "/projects/motion-project", category: "Motion/Video" },
     { title: "Photoshop Painting", image: "/images/project-card-opal.jpg", link: "/projects/photoshop-painting", category: "Technical Assignments" },
