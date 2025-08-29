@@ -138,30 +138,31 @@
 
 /* button */
 .link {
-  background: transparent;
-  color: #C7EDFF;
-  padding: 14px 26px;
-  border: 2px solid #FFA500; /* light accent border */
+  background: linear-gradient(135deg, #FFA500, #FF7A00); /* modern gradient */
+  color: #003366;
+  padding: 16px 28px;
+  border: none;
   border-radius: 9999px; /* pill shape */
   text-align: center;
   display: inline-block;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
   margin-bottom: 4rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle depth */
 }
 
 .link:hover {
-  background: #FFA500; /* filled on hover */
+  background: linear-gradient(135deg, #FF8C00, #FF5E00); /* hover gradient */
   color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px); /* hover lift */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .link:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transform: translateY(0); /* smooth press-down effect */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .projectText {
@@ -208,7 +209,6 @@
     line-height: 0.2;
   }
 }
-
 
 /* Responsive - Desktop */
 @media (min-width: 1024px) {

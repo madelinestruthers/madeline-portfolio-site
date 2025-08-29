@@ -27,7 +27,6 @@
 .fullWidthImg {
   width: 100%;
   display: block;
-  margin-bottom: 2rem;
 }
 
 /* Overlay Content */
@@ -76,6 +75,7 @@
 .scroller section img {
   width: auto;
   max-height: 82vh;
+  margin-top: 2rem;
 }
 
 /* Responsive Banner Height */
@@ -136,23 +136,32 @@
   color: #cbedfd;
 }
 
+/* button */
 .link {
-  background-color: #FFA500; 
-  color: #003366; 
-  padding: 20px 30px; 
-  border: none; 
-  border-radius: 30px; 
+  background: transparent;
+  color: #C7EDFF;
+  padding: 14px 26px;
+  border: 2px solid #FFA500; /* light accent border */
+  border-radius: 9999px; /* pill shape */
   text-align: center;
   display: inline-block;
-  font-size: 22px; 
-  cursor: pointer; 
-  transition: background-color 0.3s ease, color 0.3s ease; 
-  font-weight: 700;
+  font-size: 18px;
+  font-weight:bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
   margin-bottom: 4rem;
 }
 
 .link:hover {
-  color: #C7EDFF; 
+  background: #FFA500; /* filled on hover */
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.link:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .projectText {
