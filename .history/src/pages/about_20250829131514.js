@@ -18,7 +18,7 @@ I graduated with distinction from BCIT’s Digital Design & Development program,
 <br/><br/>
 When I’m not designing, you’ll probably find me painting, sketching, baking, walking my dog, vibing to music, or exploring fashion trends. I love drawing inspiration from everyday life and bringing a playful, human touch to everything I create.
 <br/><br/>
-I’m excited to collaborate, experiment, and make digital experiences that are engaging, inclusive, and just a little fun. Let’s create something awesome together! Check out my links below :)
+I’m excited to collaborate, experiment, and make digital experiences that are engaging, inclusive, and just a little fun. Let’s create something awesome together!
 
              </p>
           </div>

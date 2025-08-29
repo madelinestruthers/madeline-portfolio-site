@@ -146,7 +146,7 @@
   text-align: center;
   display: inline-block;
   font-size: 18px;
-  font-weight: bold;
+  font-weight:lighter;
   cursor: pointer;
   transition: all 0.25s ease;
   margin-bottom: 4rem;
@@ -208,7 +208,6 @@
     line-height: 0.2;
   }
 }
-
 
 /* Responsive - Desktop */
 @media (min-width: 1024px) {

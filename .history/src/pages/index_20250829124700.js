@@ -85,7 +85,7 @@ export default function Home() {
 
             <section className={styles.scrollerProjects}>
               <Link href="/projects/viper-energy">
-                <img src="/images/can-mockup-project.jpg" alt="Can Project" className={styles.posterImage} />
+                <img src="/images/project-card-viper.jpg" alt="Can Project" className={styles.posterImage} />
               </Link>
               <div className={styles.projectText}>
                 <h2 className={styles.projectHeader}>Viper Energy Can Mockup</h2>
@@ -112,12 +112,16 @@ export default function Home() {
             </Link>
           </div>
 
-
         </main>
       </div>
 
 
-    
+      { /* Back to Top Button }
+       {showScroll && (
+        <button onClick={scrollToTop} className={styles.scrollTop}>
+          UP
+        </button>
+      )} */}
       <Footer />
 
 

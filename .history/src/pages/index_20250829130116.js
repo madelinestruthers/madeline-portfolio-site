@@ -112,6 +112,12 @@ export default function Home() {
             </Link>
           </div>
 
+          <div className="portfolio-card">
+  <img src="/path/to/thumbnail.jpg" alt="Project preview" />
+  <div className="portfolio-overlay">
+    <span className="portfolio-arrow">→</span>
+  </div>
+</div>
 
         </main>
       </div>
