@@ -16,7 +16,7 @@ export default function Civica() {
           <section className={styles.heroSection}>
             <div className={styles.bioContainer}>
               <h1 className={styles.h1Style}>Civica – Legal Aid <br /> Mobile App</h1>
-              <h2 className={styles.subHeading}>Role: UX & Graphic Designer</h2>
+              <h2 className={styles.subHeading}>Role: Graphic Designer & Marketer</h2>
               <p className={styles.bio}>
                 A legal support app designed to empower underprivileged women by providing accessible tools and guidance for navigating legal challenges.
               </p>

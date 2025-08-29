@@ -20,7 +20,7 @@ export default function WelTel() {
           </p>
 
           <Image
-            src="/images/Weltel-logo-white.svg"
+            src="/images/heart.svg"
             alt="WelTel logo"
             width={400}
             height={400}
@@ -43,6 +43,9 @@ export default function WelTel() {
         <p className={styles.weltelDescription}>
           My social media posts led to measurable boosts in reach and engagement. Screenshots from WelTel’s analytics reveal significant increases across key metrics following campaign launches—profile visits jumped from 2 to 54, and audience reach surged from 72 to 1,056. These results highlight the impact of consistent, strategic visual content in driving meaningful interactions and expanding WelTel’s online presence.
           Scroll down to see a data comparison!
+
+          <br/><br/> 
+          During my internship I also collaborated with the design team to develop a visual style guide defining colour palettes, typography, and logo usage, ensuring brand consistency across all materials.
         </p>
 
         <h2 className={styles.h2Style}>Data Comparison</h2>
@@ -74,6 +77,7 @@ export default function WelTel() {
             <Image src="/images/arrow_asset.png" alt="Arrow Asset" width={150} height={150} className={styles.assetImage} />
             <Image src="/images/cross_asset.svg" alt="Cross Asset" width={150} height={150} className={styles.assetImage} />
             <Image src="/images/nurse.png" alt="Nurse Asset" width={150} height={150} className={styles.assetImage} />
+            <Image src="/images/heart.svg" alt="Nurse Asset" width={150} height={150} className={styles.assetImage} />
           </div>
         </div>
       </main>

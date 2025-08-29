@@ -17,10 +17,11 @@ export default function WelTel() {
             During my internship at WelTel Health, I developed a cohesive series of social media graphics to enhance the company’s online presence and connect with its audience. I created a consistent visual system—including templates, reusable assets, a defined color palette, and typography guidelines—based on the team’s request for a simple, animated style aligned with their brand.
             <br /><br />
             Using <strong className={styles.bold}>Illustrator, Photoshop, and Figma,</strong> I organized and shared progress to ensure easy collaboration and transparency. I also contributed to communications campaigns such as “Meet the Team” and customer testimonial posts, which highlighted WelTel’s mission and community impact. Scroll down to see how I boosted WelTel’s reach and engagement through strategic, impactful design!
+          
           </p>
 
           <Image
-            src="/images/Weltel-logo-white.svg"
+            src="/images/heart.svg"
             alt="WelTel logo"
             width={400}
             height={400}
@@ -29,7 +30,7 @@ export default function WelTel() {
         </div>
 
         <section>
-          <h2 className={styles.h1Style}>Graphics</h2>
+          <h2 className={styles.h1Style}>Graphics</h2><br/>
           <div className={styles.imageGridTwoCol}>
             <Image src="/images/PSW-cover-updated.png" alt="Paramedic Services Day" width={540} height={540} className={styles.flatImage} />
             <Image src="/images/International-nurses-day-cover.png" alt="Nurses Day" width={540} height={540} className={styles.flatImage} />
@@ -43,7 +44,9 @@ export default function WelTel() {
         <p className={styles.weltelDescription}>
           My social media posts led to measurable boosts in reach and engagement. Screenshots from WelTel’s analytics reveal significant increases across key metrics following campaign launches—profile visits jumped from 2 to 54, and audience reach surged from 72 to 1,056. These results highlight the impact of consistent, strategic visual content in driving meaningful interactions and expanding WelTel’s online presence.
           Scroll down to see a data comparison!
-        </p>
+
+         
+       </p>
 
         <h2 className={styles.h2Style}>Data Comparison</h2>
         <div className={styles.insightsGrid}>
@@ -74,6 +77,7 @@ export default function WelTel() {
             <Image src="/images/arrow_asset.png" alt="Arrow Asset" width={150} height={150} className={styles.assetImage} />
             <Image src="/images/cross_asset.svg" alt="Cross Asset" width={150} height={150} className={styles.assetImage} />
             <Image src="/images/nurse.png" alt="Nurse Asset" width={150} height={150} className={styles.assetImage} />
+            <Image src="/images/heart.svg" alt="Nurse Asset" width={150} height={150} className={styles.assetImage} />
           </div>
         </div>
       </main>
